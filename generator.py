@@ -23,9 +23,9 @@ for i in range(100):
     execution_times[ig] = truncate(random.uniform(0.8, 0.99)*deadlines[ig]) if (deadlines[ig] < inference_gpu_max) else truncate(0.9999 * deadlines[ig])
     execution_times[ic] = truncate(random.uniform(0.8, 0.99)*deadlines[ic]) if (deadlines[ic] < inference_cpu_max) else truncate(0.9999 * deadlines[ic])
     execution_times[t] = truncate(random.uniform(0.8, 0.99)*deadlines[t]) if (deadlines[t] < training_max) else truncate(0.9999 * deadlines[t]) 
-    accuracies[ig] = truncate(1.5 * deadlines[ig]/inference_gpu_max) if (deadlines[ig] < inference_gpu_max) else 0.9999
-    accuracies[ic] = truncate(1.5 * deadlines[ic]/inference_cpu_max) if (deadlines[ig] < inference_cpu_max) else 0.9999
-    accuracies[t] = truncate(1.5 * deadlines[t]/training_max) if (deadlines[ig] < training_max) else 0.9999
+    accuracies[ig] = truncate(1.2 * deadlines[ig]/inference_gpu_max) if (deadlines[ig] < inference_gpu_max and deadlines[ig]/inference_gpu_max < 0.83) else 0.9999
+    accuracies[ic] = truncate(1.2 * deadlines[ic]/inference_cpu_max) if (deadlines[ig] < inference_cpu_max and deadlines[ic]/inference_cpu_max < 0.83) else 0.9999
+    accuracies[t] = truncate(1.2 * deadlines[t]/training_max) if (deadlines[ig] < training_max and deadlines[t]/training_max < 0.83) else 0.9999
     data[f'sample_{i+1}'] = {'deadlines': deadlines, 'execution_times': execution_times, 'accuracies': accuracies}
 
 with open('data.json', 'w') as f:
