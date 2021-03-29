@@ -1,0 +1,1702 @@
+{
+    "sample_1": {
+        "deadlines": {
+            "inference_gpu": 9.7578,
+            "inference_cpu": 31.4448,
+            "training": 19.1313
+        },
+        "execution_times": {
+            "inference_gpu": 9.3981,
+            "inference_cpu": 29.7478,
+            "training": 19.1294
+        },
+        "accuracies": {
+            "inference_gpu": 0.9758,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_2": {
+        "deadlines": {
+            "inference_gpu": 11.1754,
+            "inference_cpu": 23.6134,
+            "training": 19.2599
+        },
+        "execution_times": {
+            "inference_gpu": 10.5278,
+            "inference_cpu": 20.3777,
+            "training": 19.258
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.8334,
+            "training": 0.9999
+        }
+    },
+    "sample_3": {
+        "deadlines": {
+            "inference_gpu": 11.5179,
+            "inference_cpu": 21.6953,
+            "training": 13.876
+        },
+        "execution_times": {
+            "inference_gpu": 10.5881,
+            "inference_cpu": 17.64,
+            "training": 13.5404
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.7657,
+            "training": 0.9251
+        }
+    },
+    "sample_4": {
+        "deadlines": {
+            "inference_gpu": 13.4468,
+            "inference_cpu": 35.2471,
+            "training": 14.0032
+        },
+        "execution_times": {
+            "inference_gpu": 13.4455,
+            "inference_cpu": 35.2436,
+            "training": 11.4576
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9335
+        }
+    },
+    "sample_5": {
+        "deadlines": {
+            "inference_gpu": 5.7991,
+            "inference_cpu": 20.7229,
+            "training": 15.731
+        },
+        "execution_times": {
+            "inference_gpu": 4.7282,
+            "inference_cpu": 20.4199,
+            "training": 14.848
+        },
+        "accuracies": {
+            "inference_gpu": 0.5799,
+            "inference_cpu": 0.7314,
+            "training": 0.9999
+        }
+    },
+    "sample_6": {
+        "deadlines": {
+            "inference_gpu": 11.1707,
+            "inference_cpu": 27.1001,
+            "training": 9.9493
+        },
+        "execution_times": {
+            "inference_gpu": 9.0475,
+            "inference_cpu": 26.7457,
+            "training": 9.2141
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9565,
+            "training": 0.6633
+        }
+    },
+    "sample_7": {
+        "deadlines": {
+            "inference_gpu": 9.1226,
+            "inference_cpu": 32.9134,
+            "training": 19.534
+        },
+        "execution_times": {
+            "inference_gpu": 8.4439,
+            "inference_cpu": 29.2952,
+            "training": 19.532
+        },
+        "accuracies": {
+            "inference_gpu": 0.9123,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_8": {
+        "deadlines": {
+            "inference_gpu": 5.994,
+            "inference_cpu": 30.6185,
+            "training": 19.7613
+        },
+        "execution_times": {
+            "inference_gpu": 5.7039,
+            "inference_cpu": 28.7081,
+            "training": 19.7593
+        },
+        "accuracies": {
+            "inference_gpu": 0.5994,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_9": {
+        "deadlines": {
+            "inference_gpu": 14.272,
+            "inference_cpu": 34.3734,
+            "training": 19.8064
+        },
+        "execution_times": {
+            "inference_gpu": 14.2706,
+            "inference_cpu": 34.37,
+            "training": 19.8044
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_10": {
+        "deadlines": {
+            "inference_gpu": 11.2354,
+            "inference_cpu": 36.879,
+            "training": 28.1077
+        },
+        "execution_times": {
+            "inference_gpu": 9.6774,
+            "inference_cpu": 36.8753,
+            "training": 28.1049
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_11": {
+        "deadlines": {
+            "inference_gpu": 7.3964,
+            "inference_cpu": 36.1678,
+            "training": 6.782
+        },
+        "execution_times": {
+            "inference_gpu": 6.2849,
+            "inference_cpu": 36.1642,
+            "training": 6.0182
+        },
+        "accuracies": {
+            "inference_gpu": 0.7396,
+            "inference_cpu": 0.9999,
+            "training": 0.4521
+        }
+    },
+    "sample_12": {
+        "deadlines": {
+            "inference_gpu": 7.0693,
+            "inference_cpu": 24.6275,
+            "training": 7.3208
+        },
+        "execution_times": {
+            "inference_gpu": 5.8722,
+            "inference_cpu": 20.7352,
+            "training": 6.8296
+        },
+        "accuracies": {
+            "inference_gpu": 0.7069,
+            "inference_cpu": 0.8692,
+            "training": 0.4881
+        }
+    },
+    "sample_13": {
+        "deadlines": {
+            "inference_gpu": 12.9401,
+            "inference_cpu": 33.481,
+            "training": 27.4481
+        },
+        "execution_times": {
+            "inference_gpu": 12.9388,
+            "inference_cpu": 29.1637,
+            "training": 27.4454
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_14": {
+        "deadlines": {
+            "inference_gpu": 14.136,
+            "inference_cpu": 29.3017,
+            "training": 19.8251
+        },
+        "execution_times": {
+            "inference_gpu": 14.1346,
+            "inference_cpu": 28.7828,
+            "training": 19.8231
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_15": {
+        "deadlines": {
+            "inference_gpu": 5.2592,
+            "inference_cpu": 38.5803,
+            "training": 5.7984
+        },
+        "execution_times": {
+            "inference_gpu": 4.4297,
+            "inference_cpu": 38.5764,
+            "training": 5.373
+        },
+        "accuracies": {
+            "inference_gpu": 0.5259,
+            "inference_cpu": 0.9999,
+            "training": 0.3866
+        }
+    },
+    "sample_16": {
+        "deadlines": {
+            "inference_gpu": 14.4069,
+            "inference_cpu": 27.4746,
+            "training": 25.9739
+        },
+        "execution_times": {
+            "inference_gpu": 14.4055,
+            "inference_cpu": 22.3429,
+            "training": 25.9713
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9697,
+            "training": 0.9999
+        }
+    },
+    "sample_17": {
+        "deadlines": {
+            "inference_gpu": 6.6607,
+            "inference_cpu": 26.4924,
+            "training": 8.0119
+        },
+        "execution_times": {
+            "inference_gpu": 5.833,
+            "inference_cpu": 25.4365,
+            "training": 6.662
+        },
+        "accuracies": {
+            "inference_gpu": 0.6661,
+            "inference_cpu": 0.935,
+            "training": 0.5341
+        }
+    },
+    "sample_18": {
+        "deadlines": {
+            "inference_gpu": 6.2089,
+            "inference_cpu": 31.8186,
+            "training": 24.3728
+        },
+        "execution_times": {
+            "inference_gpu": 6.004,
+            "inference_cpu": 30.8098,
+            "training": 24.3704
+        },
+        "accuracies": {
+            "inference_gpu": 0.6209,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_19": {
+        "deadlines": {
+            "inference_gpu": 6.1858,
+            "inference_cpu": 23.8754,
+            "training": 15.411
+        },
+        "execution_times": {
+            "inference_gpu": 5.4592,
+            "inference_cpu": 21.0415,
+            "training": 12.8729
+        },
+        "accuracies": {
+            "inference_gpu": 0.6186,
+            "inference_cpu": 0.8427,
+            "training": 0.9999
+        }
+    },
+    "sample_20": {
+        "deadlines": {
+            "inference_gpu": 10.3444,
+            "inference_cpu": 25.1153,
+            "training": 5.3373
+        },
+        "execution_times": {
+            "inference_gpu": 9.9343,
+            "inference_cpu": 21.9512,
+            "training": 4.5489
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.8864,
+            "training": 0.3558
+        }
+    },
+    "sample_21": {
+        "deadlines": {
+            "inference_gpu": 5.4172,
+            "inference_cpu": 21.3245,
+            "training": 10.1766
+        },
+        "execution_times": {
+            "inference_gpu": 5.3104,
+            "inference_cpu": 19.0506,
+            "training": 8.7611
+        },
+        "accuracies": {
+            "inference_gpu": 0.5417,
+            "inference_cpu": 0.7526,
+            "training": 0.6784
+        }
+    },
+    "sample_22": {
+        "deadlines": {
+            "inference_gpu": 12.7685,
+            "inference_cpu": 28.3058,
+            "training": 28.1079
+        },
+        "execution_times": {
+            "inference_gpu": 12.7672,
+            "inference_cpu": 25.7793,
+            "training": 28.1051
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_23": {
+        "deadlines": {
+            "inference_gpu": 7.2125,
+            "inference_cpu": 21.2756,
+            "training": 29.3756
+        },
+        "execution_times": {
+            "inference_gpu": 6.8077,
+            "inference_cpu": 17.2239,
+            "training": 29.3727
+        },
+        "accuracies": {
+            "inference_gpu": 0.7212,
+            "inference_cpu": 0.7509,
+            "training": 0.9999
+        }
+    },
+    "sample_24": {
+        "deadlines": {
+            "inference_gpu": 6.1912,
+            "inference_cpu": 36.9666,
+            "training": 23.1581
+        },
+        "execution_times": {
+            "inference_gpu": 5.5231,
+            "inference_cpu": 36.9629,
+            "training": 23.1558
+        },
+        "accuracies": {
+            "inference_gpu": 0.6191,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_25": {
+        "deadlines": {
+            "inference_gpu": 11.7977,
+            "inference_cpu": 24.0607,
+            "training": 23.7635
+        },
+        "execution_times": {
+            "inference_gpu": 9.7778,
+            "inference_cpu": 22.6486,
+            "training": 23.7611
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.8492,
+            "training": 0.9999
+        }
+    },
+    "sample_26": {
+        "deadlines": {
+            "inference_gpu": 14.3473,
+            "inference_cpu": 25.3835,
+            "training": 18.4784
+        },
+        "execution_times": {
+            "inference_gpu": 14.3459,
+            "inference_cpu": 22.5765,
+            "training": 18.4766
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.8959,
+            "training": 0.9999
+        }
+    },
+    "sample_27": {
+        "deadlines": {
+            "inference_gpu": 12.155,
+            "inference_cpu": 33.6039,
+            "training": 21.8544
+        },
+        "execution_times": {
+            "inference_gpu": 12.1538,
+            "inference_cpu": 30.6339,
+            "training": 21.8522
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_28": {
+        "deadlines": {
+            "inference_gpu": 12.1241,
+            "inference_cpu": 30.4791,
+            "training": 6.4394
+        },
+        "execution_times": {
+            "inference_gpu": 12.1229,
+            "inference_cpu": 26.2165,
+            "training": 6.2032
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.4293
+        }
+    },
+    "sample_29": {
+        "deadlines": {
+            "inference_gpu": 14.9244,
+            "inference_cpu": 31.3477,
+            "training": 16.6733
+        },
+        "execution_times": {
+            "inference_gpu": 14.9229,
+            "inference_cpu": 30.3304,
+            "training": 14.7708
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_30": {
+        "deadlines": {
+            "inference_gpu": 14.7667,
+            "inference_cpu": 36.3415,
+            "training": 24.9142
+        },
+        "execution_times": {
+            "inference_gpu": 14.7652,
+            "inference_cpu": 36.3379,
+            "training": 24.9117
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_31": {
+        "deadlines": {
+            "inference_gpu": 7.3322,
+            "inference_cpu": 22.9225,
+            "training": 14.8434
+        },
+        "execution_times": {
+            "inference_gpu": 5.8706,
+            "inference_cpu": 22.1052,
+            "training": 12.2408
+        },
+        "accuracies": {
+            "inference_gpu": 0.7332,
+            "inference_cpu": 0.809,
+            "training": 0.9896
+        }
+    },
+    "sample_32": {
+        "deadlines": {
+            "inference_gpu": 14.5507,
+            "inference_cpu": 34.261,
+            "training": 28.1425
+        },
+        "execution_times": {
+            "inference_gpu": 14.5492,
+            "inference_cpu": 34.2576,
+            "training": 28.1397
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_33": {
+        "deadlines": {
+            "inference_gpu": 12.89,
+            "inference_cpu": 37.5228,
+            "training": 19.552
+        },
+        "execution_times": {
+            "inference_gpu": 12.8887,
+            "inference_cpu": 37.519,
+            "training": 19.55
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_34": {
+        "deadlines": {
+            "inference_gpu": 6.3008,
+            "inference_cpu": 35.5016,
+            "training": 23.1774
+        },
+        "execution_times": {
+            "inference_gpu": 6.0526,
+            "inference_cpu": 35.498,
+            "training": 23.1751
+        },
+        "accuracies": {
+            "inference_gpu": 0.6301,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_35": {
+        "deadlines": {
+            "inference_gpu": 8.2469,
+            "inference_cpu": 38.2257,
+            "training": 28.5916
+        },
+        "execution_times": {
+            "inference_gpu": 7.1697,
+            "inference_cpu": 38.2219,
+            "training": 28.5887
+        },
+        "accuracies": {
+            "inference_gpu": 0.8247,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_36": {
+        "deadlines": {
+            "inference_gpu": 9.0044,
+            "inference_cpu": 39.0872,
+            "training": 23.8787
+        },
+        "execution_times": {
+            "inference_gpu": 7.5266,
+            "inference_cpu": 39.0833,
+            "training": 23.8763
+        },
+        "accuracies": {
+            "inference_gpu": 0.9004,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_37": {
+        "deadlines": {
+            "inference_gpu": 14.4,
+            "inference_cpu": 20.0427,
+            "training": 27.3139
+        },
+        "execution_times": {
+            "inference_gpu": 14.3986,
+            "inference_cpu": 16.8271,
+            "training": 27.3112
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.7074,
+            "training": 0.9999
+        }
+    },
+    "sample_38": {
+        "deadlines": {
+            "inference_gpu": 5.1957,
+            "inference_cpu": 29.6219,
+            "training": 5.5206
+        },
+        "execution_times": {
+            "inference_gpu": 4.7477,
+            "inference_cpu": 28.2311,
+            "training": 4.9488
+        },
+        "accuracies": {
+            "inference_gpu": 0.5196,
+            "inference_cpu": 0.9999,
+            "training": 0.368
+        }
+    },
+    "sample_39": {
+        "deadlines": {
+            "inference_gpu": 5.3772,
+            "inference_cpu": 36.209,
+            "training": 25.5384
+        },
+        "execution_times": {
+            "inference_gpu": 4.7858,
+            "inference_cpu": 36.2054,
+            "training": 25.5358
+        },
+        "accuracies": {
+            "inference_gpu": 0.5377,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_40": {
+        "deadlines": {
+            "inference_gpu": 7.0546,
+            "inference_cpu": 35.1339,
+            "training": 28.1077
+        },
+        "execution_times": {
+            "inference_gpu": 6.0893,
+            "inference_cpu": 35.1304,
+            "training": 28.1049
+        },
+        "accuracies": {
+            "inference_gpu": 0.7055,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_41": {
+        "deadlines": {
+            "inference_gpu": 14.3377,
+            "inference_cpu": 24.9438,
+            "training": 21.9458
+        },
+        "execution_times": {
+            "inference_gpu": 14.3363,
+            "inference_cpu": 22.6277,
+            "training": 21.9436
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.8804,
+            "training": 0.9999
+        }
+    },
+    "sample_42": {
+        "deadlines": {
+            "inference_gpu": 14.6407,
+            "inference_cpu": 31.2457,
+            "training": 20.2975
+        },
+        "execution_times": {
+            "inference_gpu": 14.6392,
+            "inference_cpu": 26.5956,
+            "training": 20.2955
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_43": {
+        "deadlines": {
+            "inference_gpu": 14.1869,
+            "inference_cpu": 38.1701,
+            "training": 19.8576
+        },
+        "execution_times": {
+            "inference_gpu": 14.1855,
+            "inference_cpu": 38.1663,
+            "training": 19.8556
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_44": {
+        "deadlines": {
+            "inference_gpu": 12.2864,
+            "inference_cpu": 21.7552,
+            "training": 12.1599
+        },
+        "execution_times": {
+            "inference_gpu": 12.2852,
+            "inference_cpu": 20.4877,
+            "training": 11.1761
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.7678,
+            "training": 0.8107
+        }
+    },
+    "sample_45": {
+        "deadlines": {
+            "inference_gpu": 11.4812,
+            "inference_cpu": 35.1454,
+            "training": 28.6048
+        },
+        "execution_times": {
+            "inference_gpu": 11.2146,
+            "inference_cpu": 35.1419,
+            "training": 28.6019
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_46": {
+        "deadlines": {
+            "inference_gpu": 11.0331,
+            "inference_cpu": 29.1593,
+            "training": 23.4171
+        },
+        "execution_times": {
+            "inference_gpu": 10.62,
+            "inference_cpu": 27.1022,
+            "training": 23.4148
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_47": {
+        "deadlines": {
+            "inference_gpu": 7.7564,
+            "inference_cpu": 21.7746,
+            "training": 22.8024
+        },
+        "execution_times": {
+            "inference_gpu": 7.3093,
+            "inference_cpu": 18.1126,
+            "training": 22.8001
+        },
+        "accuracies": {
+            "inference_gpu": 0.7756,
+            "inference_cpu": 0.7685,
+            "training": 0.9999
+        }
+    },
+    "sample_48": {
+        "deadlines": {
+            "inference_gpu": 12.5881,
+            "inference_cpu": 33.0934,
+            "training": 11.2253
+        },
+        "execution_times": {
+            "inference_gpu": 12.5868,
+            "inference_cpu": 30.0654,
+            "training": 10.1589
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.7484
+        }
+    },
+    "sample_49": {
+        "deadlines": {
+            "inference_gpu": 10.9082,
+            "inference_cpu": 26.7949,
+            "training": 8.6091
+        },
+        "execution_times": {
+            "inference_gpu": 8.7891,
+            "inference_cpu": 25.9983,
+            "training": 7.0021
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9457,
+            "training": 0.5739
+        }
+    },
+    "sample_50": {
+        "deadlines": {
+            "inference_gpu": 5.6023,
+            "inference_cpu": 38.5709,
+            "training": 12.6398
+        },
+        "execution_times": {
+            "inference_gpu": 4.5249,
+            "inference_cpu": 38.567,
+            "training": 12.263
+        },
+        "accuracies": {
+            "inference_gpu": 0.5602,
+            "inference_cpu": 0.9999,
+            "training": 0.8427
+        }
+    },
+    "sample_51": {
+        "deadlines": {
+            "inference_gpu": 14.926,
+            "inference_cpu": 35.8726,
+            "training": 8.6049
+        },
+        "execution_times": {
+            "inference_gpu": 14.9245,
+            "inference_cpu": 35.869,
+            "training": 8.0835
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.5737
+        }
+    },
+    "sample_52": {
+        "deadlines": {
+            "inference_gpu": 14.5518,
+            "inference_cpu": 22.2464,
+            "training": 27.3527
+        },
+        "execution_times": {
+            "inference_gpu": 14.5503,
+            "inference_cpu": 17.9667,
+            "training": 27.35
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.7852,
+            "training": 0.9999
+        }
+    },
+    "sample_53": {
+        "deadlines": {
+            "inference_gpu": 13.5937,
+            "inference_cpu": 20.3857,
+            "training": 24.8231
+        },
+        "execution_times": {
+            "inference_gpu": 13.5923,
+            "inference_cpu": 17.9079,
+            "training": 24.8206
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.7195,
+            "training": 0.9999
+        }
+    },
+    "sample_54": {
+        "deadlines": {
+            "inference_gpu": 5.1074,
+            "inference_cpu": 38.8146,
+            "training": 26.4777
+        },
+        "execution_times": {
+            "inference_gpu": 4.1978,
+            "inference_cpu": 38.8107,
+            "training": 26.4751
+        },
+        "accuracies": {
+            "inference_gpu": 0.5107,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_55": {
+        "deadlines": {
+            "inference_gpu": 5.8414,
+            "inference_cpu": 25.6677,
+            "training": 20.9673
+        },
+        "execution_times": {
+            "inference_gpu": 5.613,
+            "inference_cpu": 22.6484,
+            "training": 20.9652
+        },
+        "accuracies": {
+            "inference_gpu": 0.5841,
+            "inference_cpu": 0.9059,
+            "training": 0.9999
+        }
+    },
+    "sample_56": {
+        "deadlines": {
+            "inference_gpu": 5.9121,
+            "inference_cpu": 31.8623,
+            "training": 25.8246
+        },
+        "execution_times": {
+            "inference_gpu": 5.5285,
+            "inference_cpu": 28.8072,
+            "training": 25.822
+        },
+        "accuracies": {
+            "inference_gpu": 0.5912,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_57": {
+        "deadlines": {
+            "inference_gpu": 6.0449,
+            "inference_cpu": 39.7658,
+            "training": 16.6308
+        },
+        "execution_times": {
+            "inference_gpu": 5.4846,
+            "inference_cpu": 39.7618,
+            "training": 15.577
+        },
+        "accuracies": {
+            "inference_gpu": 0.6045,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_58": {
+        "deadlines": {
+            "inference_gpu": 7.1962,
+            "inference_cpu": 20.0117,
+            "training": 21.9189
+        },
+        "execution_times": {
+            "inference_gpu": 6.3914,
+            "inference_cpu": 19.5874,
+            "training": 21.9167
+        },
+        "accuracies": {
+            "inference_gpu": 0.7196,
+            "inference_cpu": 0.7063,
+            "training": 0.9999
+        }
+    },
+    "sample_59": {
+        "deadlines": {
+            "inference_gpu": 9.9193,
+            "inference_cpu": 31.5131,
+            "training": 20.9594
+        },
+        "execution_times": {
+            "inference_gpu": 8.6167,
+            "inference_cpu": 28.4039,
+            "training": 20.9573
+        },
+        "accuracies": {
+            "inference_gpu": 0.9919,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_60": {
+        "deadlines": {
+            "inference_gpu": 12.5404,
+            "inference_cpu": 23.8561,
+            "training": 11.6218
+        },
+        "execution_times": {
+            "inference_gpu": 12.5391,
+            "inference_cpu": 23.4802,
+            "training": 9.9275
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.842,
+            "training": 0.7748
+        }
+    },
+    "sample_61": {
+        "deadlines": {
+            "inference_gpu": 9.0175,
+            "inference_cpu": 37.3136,
+            "training": 22.7313
+        },
+        "execution_times": {
+            "inference_gpu": 8.4383,
+            "inference_cpu": 37.3099,
+            "training": 22.729
+        },
+        "accuracies": {
+            "inference_gpu": 0.9017,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_62": {
+        "deadlines": {
+            "inference_gpu": 8.1936,
+            "inference_cpu": 33.6691,
+            "training": 10.037
+        },
+        "execution_times": {
+            "inference_gpu": 7.4894,
+            "inference_cpu": 27.5405,
+            "training": 8.1013
+        },
+        "accuracies": {
+            "inference_gpu": 0.8194,
+            "inference_cpu": 0.9999,
+            "training": 0.6691
+        }
+    },
+    "sample_63": {
+        "deadlines": {
+            "inference_gpu": 11.12,
+            "inference_cpu": 26.3175,
+            "training": 29.3071
+        },
+        "execution_times": {
+            "inference_gpu": 10.6437,
+            "inference_cpu": 25.4902,
+            "training": 29.3042
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9289,
+            "training": 0.9999
+        }
+    },
+    "sample_64": {
+        "deadlines": {
+            "inference_gpu": 13.2026,
+            "inference_cpu": 20.4516,
+            "training": 5.9727
+        },
+        "execution_times": {
+            "inference_gpu": 13.2013,
+            "inference_cpu": 16.4556,
+            "training": 5.0612
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.7218,
+            "training": 0.3982
+        }
+    },
+    "sample_65": {
+        "deadlines": {
+            "inference_gpu": 7.5427,
+            "inference_cpu": 35.5424,
+            "training": 14.248
+        },
+        "execution_times": {
+            "inference_gpu": 6.5987,
+            "inference_cpu": 35.5388,
+            "training": 12.9867
+        },
+        "accuracies": {
+            "inference_gpu": 0.7543,
+            "inference_cpu": 0.9999,
+            "training": 0.9499
+        }
+    },
+    "sample_66": {
+        "deadlines": {
+            "inference_gpu": 8.0998,
+            "inference_cpu": 23.7457,
+            "training": 9.1441
+        },
+        "execution_times": {
+            "inference_gpu": 7.4798,
+            "inference_cpu": 19.8636,
+            "training": 8.8355
+        },
+        "accuracies": {
+            "inference_gpu": 0.81,
+            "inference_cpu": 0.8381,
+            "training": 0.6096
+        }
+    },
+    "sample_67": {
+        "deadlines": {
+            "inference_gpu": 10.666,
+            "inference_cpu": 22.4697,
+            "training": 29.9453
+        },
+        "execution_times": {
+            "inference_gpu": 8.5736,
+            "inference_cpu": 18.7468,
+            "training": 29.9423
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.793,
+            "training": 0.9999
+        }
+    },
+    "sample_68": {
+        "deadlines": {
+            "inference_gpu": 13.7032,
+            "inference_cpu": 37.9585,
+            "training": 10.4761
+        },
+        "execution_times": {
+            "inference_gpu": 13.7018,
+            "inference_cpu": 37.9547,
+            "training": 8.8816
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.6984
+        }
+    },
+    "sample_69": {
+        "deadlines": {
+            "inference_gpu": 6.2448,
+            "inference_cpu": 33.2743,
+            "training": 19.7247
+        },
+        "execution_times": {
+            "inference_gpu": 5.9701,
+            "inference_cpu": 28.4665,
+            "training": 19.7227
+        },
+        "accuracies": {
+            "inference_gpu": 0.6245,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_70": {
+        "deadlines": {
+            "inference_gpu": 12.8929,
+            "inference_cpu": 22.1117,
+            "training": 6.3846
+        },
+        "execution_times": {
+            "inference_gpu": 12.8916,
+            "inference_cpu": 19.5165,
+            "training": 5.8759
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.7804,
+            "training": 0.4256
+        }
+    },
+    "sample_71": {
+        "deadlines": {
+            "inference_gpu": 7.1505,
+            "inference_cpu": 32.3451,
+            "training": 10.9569
+        },
+        "execution_times": {
+            "inference_gpu": 6.4886,
+            "inference_cpu": 27.2834,
+            "training": 9.9125
+        },
+        "accuracies": {
+            "inference_gpu": 0.7151,
+            "inference_cpu": 0.9999,
+            "training": 0.7305
+        }
+    },
+    "sample_72": {
+        "deadlines": {
+            "inference_gpu": 9.7781,
+            "inference_cpu": 31.7307,
+            "training": 26.4616
+        },
+        "execution_times": {
+            "inference_gpu": 9.4393,
+            "inference_cpu": 26.7518,
+            "training": 26.459
+        },
+        "accuracies": {
+            "inference_gpu": 0.9778,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_73": {
+        "deadlines": {
+            "inference_gpu": 7.7297,
+            "inference_cpu": 28.658,
+            "training": 16.2925
+        },
+        "execution_times": {
+            "inference_gpu": 6.9451,
+            "inference_cpu": 23.7795,
+            "training": 14.3155
+        },
+        "accuracies": {
+            "inference_gpu": 0.773,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_74": {
+        "deadlines": {
+            "inference_gpu": 8.2344,
+            "inference_cpu": 26.5364,
+            "training": 7.9917
+        },
+        "execution_times": {
+            "inference_gpu": 7.7332,
+            "inference_cpu": 21.4535,
+            "training": 7.0936
+        },
+        "accuracies": {
+            "inference_gpu": 0.8234,
+            "inference_cpu": 0.9366,
+            "training": 0.5328
+        }
+    },
+    "sample_75": {
+        "deadlines": {
+            "inference_gpu": 7.0663,
+            "inference_cpu": 38.721,
+            "training": 11.7597
+        },
+        "execution_times": {
+            "inference_gpu": 6.5097,
+            "inference_cpu": 38.7171,
+            "training": 10.0435
+        },
+        "accuracies": {
+            "inference_gpu": 0.7066,
+            "inference_cpu": 0.9999,
+            "training": 0.784
+        }
+    },
+    "sample_76": {
+        "deadlines": {
+            "inference_gpu": 7.894,
+            "inference_cpu": 34.3101,
+            "training": 16.0477
+        },
+        "execution_times": {
+            "inference_gpu": 6.9794,
+            "inference_cpu": 34.3067,
+            "training": 15.5875
+        },
+        "accuracies": {
+            "inference_gpu": 0.7894,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_77": {
+        "deadlines": {
+            "inference_gpu": 6.2692,
+            "inference_cpu": 38.0853,
+            "training": 29.701
+        },
+        "execution_times": {
+            "inference_gpu": 5.1558,
+            "inference_cpu": 38.0815,
+            "training": 29.698
+        },
+        "accuracies": {
+            "inference_gpu": 0.6269,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_78": {
+        "deadlines": {
+            "inference_gpu": 13.6479,
+            "inference_cpu": 24.238,
+            "training": 22.4692
+        },
+        "execution_times": {
+            "inference_gpu": 13.6465,
+            "inference_cpu": 22.0047,
+            "training": 22.467
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.8555,
+            "training": 0.9999
+        }
+    },
+    "sample_79": {
+        "deadlines": {
+            "inference_gpu": 14.947,
+            "inference_cpu": 38.3394,
+            "training": 10.6248
+        },
+        "execution_times": {
+            "inference_gpu": 14.9455,
+            "inference_cpu": 38.3356,
+            "training": 8.8182
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.7083
+        }
+    },
+    "sample_80": {
+        "deadlines": {
+            "inference_gpu": 11.5843,
+            "inference_cpu": 38.9598,
+            "training": 5.984
+        },
+        "execution_times": {
+            "inference_gpu": 11.4527,
+            "inference_cpu": 38.9559,
+            "training": 5.4899
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.3989
+        }
+    },
+    "sample_81": {
+        "deadlines": {
+            "inference_gpu": 6.3945,
+            "inference_cpu": 37.5495,
+            "training": 11.0203
+        },
+        "execution_times": {
+            "inference_gpu": 6.1014,
+            "inference_cpu": 37.5457,
+            "training": 10.3216
+        },
+        "accuracies": {
+            "inference_gpu": 0.6394,
+            "inference_cpu": 0.9999,
+            "training": 0.7347
+        }
+    },
+    "sample_82": {
+        "deadlines": {
+            "inference_gpu": 14.0468,
+            "inference_cpu": 22.2363,
+            "training": 19.1099
+        },
+        "execution_times": {
+            "inference_gpu": 14.0454,
+            "inference_cpu": 20.6326,
+            "training": 19.108
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.7848,
+            "training": 0.9999
+        }
+    },
+    "sample_83": {
+        "deadlines": {
+            "inference_gpu": 9.8793,
+            "inference_cpu": 32.9796,
+            "training": 9.0084
+        },
+        "execution_times": {
+            "inference_gpu": 8.7136,
+            "inference_cpu": 27.0914,
+            "training": 8.7467
+        },
+        "accuracies": {
+            "inference_gpu": 0.9879,
+            "inference_cpu": 0.9999,
+            "training": 0.6006
+        }
+    },
+    "sample_84": {
+        "deadlines": {
+            "inference_gpu": 12.9758,
+            "inference_cpu": 21.4043,
+            "training": 17.0755
+        },
+        "execution_times": {
+            "inference_gpu": 12.9745,
+            "inference_cpu": 19.9791,
+            "training": 15.7554
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.7554,
+            "training": 0.9999
+        }
+    },
+    "sample_85": {
+        "deadlines": {
+            "inference_gpu": 8.9219,
+            "inference_cpu": 27.5329,
+            "training": 23.5441
+        },
+        "execution_times": {
+            "inference_gpu": 7.3539,
+            "inference_cpu": 23.5624,
+            "training": 23.5417
+        },
+        "accuracies": {
+            "inference_gpu": 0.8922,
+            "inference_cpu": 0.9717,
+            "training": 0.9999
+        }
+    },
+    "sample_86": {
+        "deadlines": {
+            "inference_gpu": 11.5741,
+            "inference_cpu": 36.9799,
+            "training": 11.5348
+        },
+        "execution_times": {
+            "inference_gpu": 10.4527,
+            "inference_cpu": 36.9762,
+            "training": 10.7552
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.769
+        }
+    },
+    "sample_87": {
+        "deadlines": {
+            "inference_gpu": 8.1036,
+            "inference_cpu": 32.7097,
+            "training": 6.5545
+        },
+        "execution_times": {
+            "inference_gpu": 7.2707,
+            "inference_cpu": 27.7716,
+            "training": 6.1855
+        },
+        "accuracies": {
+            "inference_gpu": 0.8104,
+            "inference_cpu": 0.9999,
+            "training": 0.437
+        }
+    },
+    "sample_88": {
+        "deadlines": {
+            "inference_gpu": 9.3904,
+            "inference_cpu": 30.1415,
+            "training": 25.8842
+        },
+        "execution_times": {
+            "inference_gpu": 8.079,
+            "inference_cpu": 25.8945,
+            "training": 25.8816
+        },
+        "accuracies": {
+            "inference_gpu": 0.939,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_89": {
+        "deadlines": {
+            "inference_gpu": 8.8418,
+            "inference_cpu": 35.7304,
+            "training": 19.5089
+        },
+        "execution_times": {
+            "inference_gpu": 7.1249,
+            "inference_cpu": 35.7268,
+            "training": 19.5069
+        },
+        "accuracies": {
+            "inference_gpu": 0.8842,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_90": {
+        "deadlines": {
+            "inference_gpu": 8.2699,
+            "inference_cpu": 22.7331,
+            "training": 12.2994
+        },
+        "execution_times": {
+            "inference_gpu": 7.9542,
+            "inference_cpu": 22.002,
+            "training": 11.4999
+        },
+        "accuracies": {
+            "inference_gpu": 0.827,
+            "inference_cpu": 0.8023,
+            "training": 0.82
+        }
+    },
+    "sample_91": {
+        "deadlines": {
+            "inference_gpu": 11.211,
+            "inference_cpu": 38.0136,
+            "training": 7.5306
+        },
+        "execution_times": {
+            "inference_gpu": 10.3021,
+            "inference_cpu": 38.0098,
+            "training": 6.672
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.502
+        }
+    },
+    "sample_92": {
+        "deadlines": {
+            "inference_gpu": 13.2512,
+            "inference_cpu": 26.044,
+            "training": 9.5545
+        },
+        "execution_times": {
+            "inference_gpu": 13.2499,
+            "inference_cpu": 21.5186,
+            "training": 7.8479
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9192,
+            "training": 0.637
+        }
+    },
+    "sample_93": {
+        "deadlines": {
+            "inference_gpu": 14.5516,
+            "inference_cpu": 31.6995,
+            "training": 5.199
+        },
+        "execution_times": {
+            "inference_gpu": 14.5501,
+            "inference_cpu": 27.0821,
+            "training": 4.2675
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.3466
+        }
+    },
+    "sample_94": {
+        "deadlines": {
+            "inference_gpu": 8.4242,
+            "inference_cpu": 24.1793,
+            "training": 15.4194
+        },
+        "execution_times": {
+            "inference_gpu": 6.9511,
+            "inference_cpu": 22.0538,
+            "training": 13.9301
+        },
+        "accuracies": {
+            "inference_gpu": 0.8424,
+            "inference_cpu": 0.8534,
+            "training": 0.9999
+        }
+    },
+    "sample_95": {
+        "deadlines": {
+            "inference_gpu": 12.7836,
+            "inference_cpu": 32.6432,
+            "training": 5.9188
+        },
+        "execution_times": {
+            "inference_gpu": 12.7823,
+            "inference_cpu": 30.3877,
+            "training": 5.5097
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.3946
+        }
+    },
+    "sample_96": {
+        "deadlines": {
+            "inference_gpu": 12.495,
+            "inference_cpu": 31.4897,
+            "training": 13.5424
+        },
+        "execution_times": {
+            "inference_gpu": 12.4938,
+            "inference_cpu": 25.5356,
+            "training": 11.5615
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9028
+        }
+    },
+    "sample_97": {
+        "deadlines": {
+            "inference_gpu": 13.0474,
+            "inference_cpu": 29.2346,
+            "training": 28.9804
+        },
+        "execution_times": {
+            "inference_gpu": 13.0461,
+            "inference_cpu": 24.1809,
+            "training": 28.9775
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_98": {
+        "deadlines": {
+            "inference_gpu": 14.9528,
+            "inference_cpu": 32.281,
+            "training": 29.5644
+        },
+        "execution_times": {
+            "inference_gpu": 14.9513,
+            "inference_cpu": 30.9213,
+            "training": 29.5614
+        },
+        "accuracies": {
+            "inference_gpu": 0.9999,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    },
+    "sample_99": {
+        "deadlines": {
+            "inference_gpu": 5.1178,
+            "inference_cpu": 21.1222,
+            "training": 19.4106
+        },
+        "execution_times": {
+            "inference_gpu": 4.9932,
+            "inference_cpu": 20.8182,
+            "training": 19.4087
+        },
+        "accuracies": {
+            "inference_gpu": 0.5118,
+            "inference_cpu": 0.7455,
+            "training": 0.9999
+        }
+    },
+    "sample_100": {
+        "deadlines": {
+            "inference_gpu": 5.5498,
+            "inference_cpu": 39.4066,
+            "training": 24.523
+        },
+        "execution_times": {
+            "inference_gpu": 5.3548,
+            "inference_cpu": 39.4027,
+            "training": 24.5205
+        },
+        "accuracies": {
+            "inference_gpu": 0.555,
+            "inference_cpu": 0.9999,
+            "training": 0.9999
+        }
+    }
+}
