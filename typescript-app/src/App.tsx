@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import React, { PureComponent } from 'react';
+=======
+import React from 'react';
+import logo from './logo.svg';
+>>>>>>> f1f63496abed35d1b50e1e82f974d819bae60328
 import './App.css';
 import "./styles.css";
 import {
@@ -8,10 +13,16 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
+<<<<<<< HEAD
   ComposedChart,
   ResponsiveContainer,
   Legend,
   Bar
+=======
+  Brush,
+  AreaChart,
+  Area
+>>>>>>> f1f63496abed35d1b50e1e82f974d819bae60328
 } from "recharts";
 
 const data = [{
