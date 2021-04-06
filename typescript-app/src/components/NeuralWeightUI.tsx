@@ -25,6 +25,14 @@ export default function NeuralWeightUI() {
                                 <input type="checkbox"/>
                                 ResNet
                             </label>
+                            <label className="checkbox">
+                                <input type="checkbox"/>
+                                IM2TXT
+                            </label>
+                            <label className="checkbox">
+                                <input type="checkbox"/>
+                                Inception
+                            </label>
                         </div>
                     </div>
                 </div>
