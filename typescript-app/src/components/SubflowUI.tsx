@@ -104,17 +104,17 @@ export default function SubflowUI() {
             <div className="column">     
               <div className="box">
                 <label className="checkbox">
-                  <input type="checkbox"></input>
+                  <input type="checkbox"></input>{" "}
                   Le-Net5 (MNIST)
                 </label>
                 <br></br>
                 <label className="checkbox">
-                  <input type="checkbox"></input>
+                  <input type="checkbox"></input>{" "}
                   AlexNet (CIFAR-10)
                 </label>
                 <br></br>
                 <label className="checkbox">
-                  <input type="checkbox"></input>
+                  <input type="checkbox"></input>{" "}
                   KWS (GSC)
                 </label>
               </div>
