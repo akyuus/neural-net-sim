@@ -178,8 +178,6 @@ export default function NeuralWeightUI() {
                                 </LineChart>
                             </div>
                         </div>
-                    </div>
-                    <div className="row">
                         <div className="col">
                             <h2 className="subtitle is-2">Graph 3</h2>
                             <div className="box">
