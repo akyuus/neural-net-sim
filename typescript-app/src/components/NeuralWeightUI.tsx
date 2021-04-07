@@ -1,15 +1,15 @@
 import "../styles.css";
-import {
-    LineChart,
-    Line,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    ComposedChart,
-    Legend,
-    Bar
-  } from "recharts";
+// import {
+//     LineChart,
+//     Line,
+//     XAxis,
+//     YAxis,
+//     CartesianGrid,
+//     Tooltip,
+//     ComposedChart,
+//     Legend,
+//     Bar
+//   } from "recharts";
 
 export default function NeuralWeightUI() {
     return (
@@ -19,18 +19,22 @@ export default function NeuralWeightUI() {
                     <h1 className="title">
                         Neural Network Models
                     </h1>
-                    <div className="columns">
-                        <div className="column">
+                    <div className="column">
+                        <div className="row">
                             <label className="checkbox">
-                                <input type="checkbox"/>
+                                <input type="checkbox" />
                                 ResNet
                             </label>
+                        </div>
+                        <div className="row">
                             <label className="checkbox">
-                                <input type="checkbox"/>
+                                <input type="checkbox" />
                                 IM2TXT
                             </label>
+                        </div>
+                        <div className="row">
                             <label className="checkbox">
-                                <input type="checkbox"/>
+                                <input type="checkbox" />
                                 Inception
                             </label>
                         </div>
