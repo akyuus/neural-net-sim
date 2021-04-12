@@ -2,6 +2,7 @@
 import './App.css';
 import "./styles.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./bulma/css/bulma.css";
 import SubflowUI from './components/SubflowUI';
 import NeuralWeightUI from './components/NeuralWeightUI';
 
