@@ -10,37 +10,57 @@ import {
   Legend,
   Bar,
 } from "recharts";
+import React, { useState } from "react";
 
 import { data } from "./Data";
 import { data2 } from "./Data";
 import { data3 } from "./Data";
 import { data4 } from "./Data";
-import { data6 } from "./Data";
-import {generateData} from "./dataset";
+import { data5 } from "./Data";
+import { generateData } from "./dataset";
 
 export default function SubflowUI() {
-
-  var topGraphData = data;
-  var bottomGraphData = data2;
-
+  // Set AlexNet as the default vesion
+  // const [inferenceGPU, setInferenceGPU] = useState(data[0]);
+  // const [inferenceCPU, setInferenceCPU] = useState(data[2]);
+  // const [trainingGPU, setTrainingGPU] = useState(data[4]);
+  // const [inference, setInference] = useState(data[1]);
+  // const [training, setTraining] = useState(data[5]);
+  const [topData, setTopData] = useState(data);
+  const [bottomData, setBottomData] = useState(data2);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     switch (e.target.id) {
       case "AlexNet": {
         console.log("alex");
-        topGraphData = data;
-        bottomGraphData = data2;
+        setTopData(data);
+        setBottomData(data2);
+        // setInferenceGPU(data[0]);
+        // setInferenceCPU(data[2]);
+        // setTrainingGPU(data[4]);
+        // setInference(data[1]);
+        // setTraining(data[5]);
         break;
       }
       case "KWS": {
         console.log("KWS");
-        topGraphData = data3;
-        bottomGraphData = data4;
+        setTopData(data3);
+        setBottomData(data4);
+        // setInferenceGPU(data2[0]);
+        // setInferenceCPU(data2[2]);
+        // setTrainingGPU(data2[4]);
+        // setInference(data2[1]);
+        // setTraining(data2[5]);
         break;
       }
       case "LeNet": {
         console.log("LeNet");
-        topGraphData = data6;
-        bottomGraphData = data4;
+        setTopData(data);
+        setBottomData(data5);
+        // setInferenceGPU(data3[0]);
+        // setInferenceCPU(data3[2]);
+        // setTrainingGPU(data3[4]);
+        // setInference(data3[1]);
+        // setTraining(data3[5]);
         break;
       }
       default: {
@@ -49,6 +69,8 @@ export default function SubflowUI() {
     }
   };
 
+
+  
 
   return (
     <body>
@@ -89,149 +111,152 @@ export default function SubflowUI() {
                 </label>
               </div>
             </div>
+
             <div className="column">
-              <div className="box">Image Here</div>
-            </div>
-            <br></br>
+            <div className="box">Image Here</div>
+          </div>
+          <br></br>
           </div>
 
           <div className="columns">
             <div className="column">
-              <h2 className="subtitle is-2">Inference (GPU)</h2>{" "}
-              <div className="box">
-                <LineChart
-                  width={400}
-                  height={400}
-                  data={topGraphData}
-                  margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
-                >
-                  <XAxis dataKey="name" />
-                  <Tooltip />
-                  <CartesianGrid stroke="#f5f5f5" />
-                  <Line
-                    type="monotone"
-                    dataKey="uv"
-                    stroke="#ff7300"
-                    yAxisId={0}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="pv"
-                    stroke="#387908"
-                    yAxisId={1}
-                  />
-                </LineChart>
-              </div>
+            <h2 className="subtitle is-2">Inference (GPU)</h2>{" "}
+            <div className="box">
+            <LineChart
+                width={400}
+                height={400}
+                data={topData}
+                margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
+              >
+                <XAxis dataKey="name" />
+                <Tooltip />
+                <CartesianGrid stroke="#f5f5f5" />
+                <Line
+                  type="monotone"
+                  dataKey="uv"
+                  stroke="#ff7300"
+                  yAxisId={0}
+                />
+                <Line
+                  type="monotone"
+                  dataKey="pv"
+                  stroke="#387908"
+                  yAxisId={1}
+                />
+              </LineChart>
             </div>
-            <div className="column">
-              <h2 className="subtitle is-2">Inference (CPU)</h2>{" "}
-              <div className="box">
-                <LineChart
-                  width={400}
-                  height={400}
-                  data={topGraphData}
-                  margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
-                >
-                  <XAxis dataKey="name" />
-                  <Tooltip />
-                  <CartesianGrid stroke="#f5f5f5" />
-                  <Line
-                    type="monotone"
-                    dataKey="uv"
-                    stroke="#ff7300"
-                    yAxisId={0}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="pv"
-                    stroke="#387908"
-                    yAxisId={1}
-                  />
-                </LineChart>
-              </div>
             </div>
+
             <div className="column">
-              <h2 className="subtitle is-2">Training (GPU)</h2>{" "}
-              <div className="box">
-                <LineChart
-                  width={400}
-                  height={400}
-                  data={topGraphData}
-                  margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
-                >
-                  <XAxis dataKey="name" />
-                  <Tooltip />
-                  <CartesianGrid stroke="#f5f5f5" />
-                  <Line
-                    type="monotone"
-                    dataKey="uv"
-                    stroke="#ff7300"
-                    yAxisId={0}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="pv"
-                    stroke="#387908"
-                    yAxisId={1}
-                  />
-                </LineChart>
-              </div>
+            <h2 className="subtitle is-2">Inference (CPU)</h2>{" "}
+            <div className="box">
+              <LineChart
+                width={400}
+                height={400}
+                data={topData}
+                margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
+              >
+                <XAxis dataKey="name" />
+                <Tooltip />
+                <CartesianGrid stroke="#f5f5f5" />
+                <Line
+                  type="monotone"
+                  dataKey="uv"
+                  stroke="#ff7300"
+                  yAxisId={0}
+                />
+                <Line
+                  type="monotone"
+                  dataKey="pv"
+                  stroke="#387908"
+                  yAxisId={1}
+                />
+              </LineChart>
             </div>
           </div>
 
-          <div className="columns">
-            <div className="column">
-              <h2 className="subtitle is-2">Inference</h2>{" "}
-              <div className="box">
-                <ComposedChart
-                  width={500}
-                  height={400}
-                  data={bottomGraphData}
-                  margin={{
-                    top: 20,
-                    right: 20,
-                    bottom: 20,
-                    left: 20,
-                  }}
-                >
-                  <CartesianGrid stroke="#f5f5f5" />
-                  <XAxis dataKey="name" scale="band" />
-                  <YAxis />
-                  <Tooltip />
-                  <Legend />
-                  <Bar dataKey="uv" barSize={20} fill="#413ea0" />
-                  <Line type="monotone" dataKey="uv" stroke="#ff7300" />
-                </ComposedChart>
-              </div>
-            </div>
-            <div className="column">
-              <h2 className="subtitle is-2">Training</h2>{" "}
-              <div className="box">
-                <ComposedChart
-                  width={500}
-                  height={400}
-                  data={bottomGraphData}
-                  margin={{
-                    top: 20,
-                    right: 20,
-                    bottom: 20,
-                    left: 20,
-                  }}
-                >
-                  <CartesianGrid stroke="#f5f5f5" />
-                  <XAxis dataKey="name" scale="band" />
-                  <YAxis />
-                  <Tooltip />
-                  <Legend />
-                  <Bar dataKey="uv" barSize={20} fill="#413ea0" />
-                  <Line type="monotone" dataKey="uv" stroke="#ff7300" />
-                </ComposedChart>
-              </div>
+          <div className="column">
+            <h2 className="subtitle is-2">Training (GPU)</h2>{" "}
+            <div className="box">
+              <LineChart
+                width={400}
+                height={400}
+                data={topData}
+                margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
+              >
+                <XAxis dataKey="name" />
+                <Tooltip />
+                <CartesianGrid stroke="#f5f5f5" />
+                <Line
+                  type="monotone"
+                  dataKey="uv"
+                  stroke="#ff7300"
+                  yAxisId={0}
+                />
+                <Line
+                  type="monotone"
+                  dataKey="pv"
+                  stroke="#387908"
+                  yAxisId={1}
+                />
+              </LineChart>
             </div>
           </div>
+          </div>
+
+          <div className="columns">
+          <div className="column">
+            <h2 className="subtitle is-2">Inference</h2>{" "}
+            <div className="box">
+              <ComposedChart
+                width={500}
+                height={400}
+                data={bottomData}
+                margin={{
+                  top: 20,
+                  right: 20,
+                  bottom: 20,
+                  left: 20,
+                }}
+              >
+                <CartesianGrid stroke="#f5f5f5" />
+                <XAxis dataKey="name" scale="band" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="uv" barSize={20} fill="#413ea0" />
+                <Line type="monotone" dataKey="uv" stroke="#ff7300" />
+              </ComposedChart>
+            </div>
+          </div>
+          <div className="column">
+            <h2 className="subtitle is-2">Training</h2>{" "}
+            <div className="box">
+              <ComposedChart
+                width={500}
+                height={400}
+                data={bottomData}
+                margin={{
+                  top: 20,
+                  right: 20,
+                  bottom: 20,
+                  left: 20,
+                }}
+              >
+                <CartesianGrid stroke="#f5f5f5" />
+                <XAxis dataKey="name" scale="band" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="uv" barSize={20} fill="#413ea0" />
+                <Line type="monotone" dataKey="uv" stroke="#ff7300" />
+              </ComposedChart>
+            </div>
+          </div>
+        </div>
+
         </div>
       </section>
     </body>
   );
 }
-

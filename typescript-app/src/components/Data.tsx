@@ -165,7 +165,7 @@ export const data4 = [
 ];
 
 
-export const data6 = [
+export const data5 = [
     {
       name: 'Page A',
       uv: 725,
