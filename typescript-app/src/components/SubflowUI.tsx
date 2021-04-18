@@ -9,58 +9,58 @@ import {
   ComposedChart,
   Legend,
   Bar,
+  ResponsiveContainer
 } from "recharts";
 import React, { useState } from "react";
 
 import { data } from "./Data";
 import { data2 } from "./Data";
 import { data3 } from "./Data";
-import { data4 } from "./Data";
-import { data5 } from "./Data";
-import { generateData } from "./dataset";
+// import { data4 } from "./Data";
+// import { data5 } from "./Data";
 
 export default function SubflowUI() {
   // Set AlexNet as the default vesion
-  // const [inferenceGPU, setInferenceGPU] = useState(data[0]);
-  // const [inferenceCPU, setInferenceCPU] = useState(data[2]);
-  // const [trainingGPU, setTrainingGPU] = useState(data[4]);
-  // const [inference, setInference] = useState(data[1]);
-  // const [training, setTraining] = useState(data[5]);
-  const [topData, setTopData] = useState(data);
-  const [bottomData, setBottomData] = useState(data2);
+  const [inferenceGPU, setInferenceGPU] = useState(data[0]);
+  const [inferenceCPU, setInferenceCPU] = useState(data[2]);
+  const [trainingGPU, setTrainingGPU] = useState(data[4]);
+  const [inference, setInference] = useState(data[1]);
+  const [training, setTraining] = useState(data[5]);
+  // const [topData, setTopData] = useState(data);
+  // const [bottomData, setBottomData] = useState(data2);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     switch (e.target.id) {
       case "AlexNet": {
         console.log("alex");
-        setTopData(data);
-        setBottomData(data2);
-        // setInferenceGPU(data[0]);
-        // setInferenceCPU(data[2]);
-        // setTrainingGPU(data[4]);
-        // setInference(data[1]);
-        // setTraining(data[5]);
+        // setTopData(data);
+        // setBottomData(data2);
+        setInferenceGPU(data[0]);
+        setInferenceCPU(data[2]);
+        setTrainingGPU(data[4]);
+        setInference(data[1]);
+        setTraining(data[5]);
         break;
       }
       case "KWS": {
         console.log("KWS");
-        setTopData(data3);
-        setBottomData(data4);
-        // setInferenceGPU(data2[0]);
-        // setInferenceCPU(data2[2]);
-        // setTrainingGPU(data2[4]);
-        // setInference(data2[1]);
-        // setTraining(data2[5]);
+        // setTopData(data3);
+        // setBottomData(data4);
+        setInferenceGPU(data2[0]);
+        setInferenceCPU(data2[2]);
+        setTrainingGPU(data2[4]);
+        setInference(data2[1]);
+        setTraining(data2[5]);
         break;
       }
       case "LeNet": {
         console.log("LeNet");
-        setTopData(data);
-        setBottomData(data5);
-        // setInferenceGPU(data3[0]);
-        // setInferenceCPU(data3[2]);
-        // setTrainingGPU(data3[4]);
-        // setInference(data3[1]);
-        // setTraining(data3[5]);
+        // setTopData(data);
+        // setBottomData(data5);
+        setInferenceGPU(data3[0]);
+        setInferenceCPU(data3[2]);
+        setTrainingGPU(data3[4]);
+        setInference(data3[1]);
+        setTraining(data3[5]);
         break;
       }
       default: {
@@ -68,8 +68,10 @@ export default function SubflowUI() {
       }
     }
   };
-
-
+console.log("inference");
+console.log(inference);
+console.log("inference CPU");
+console.log(inferenceCPU);
   
 
   return (
@@ -122,10 +124,11 @@ export default function SubflowUI() {
             <div className="column">
             <h2 className="subtitle is-2">Inference (GPU)</h2>{" "}
             <div className="box">
+            <ResponsiveContainer width={700} height="80%">
             <LineChart
                 width={400}
                 height={400}
-                data={topData}
+                data={inferenceGPU}
                 margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
               >
                 <XAxis dataKey="name" />
@@ -144,16 +147,18 @@ export default function SubflowUI() {
                   yAxisId={1}
                 />
               </LineChart>
+              </ResponsiveContainer>
             </div>
             </div>
 
             <div className="column">
             <h2 className="subtitle is-2">Inference (CPU)</h2>{" "}
             <div className="box">
+            <ResponsiveContainer width={700} height="80%">
               <LineChart
                 width={400}
                 height={400}
-                data={topData}
+                data={inferenceCPU}
                 margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
               >
                 <XAxis dataKey="name" />
@@ -172,16 +177,18 @@ export default function SubflowUI() {
                   yAxisId={1}
                 />
               </LineChart>
+              </ResponsiveContainer>
             </div>
           </div>
 
           <div className="column">
             <h2 className="subtitle is-2">Training (GPU)</h2>{" "}
             <div className="box">
+            <ResponsiveContainer width={700} height="80%">
               <LineChart
                 width={400}
                 height={400}
-                data={topData}
+                data={trainingGPU}
                 margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
               >
                 <XAxis dataKey="name" />
@@ -200,6 +207,7 @@ export default function SubflowUI() {
                   yAxisId={1}
                 />
               </LineChart>
+              </ResponsiveContainer>
             </div>
           </div>
           </div>
@@ -208,10 +216,11 @@ export default function SubflowUI() {
           <div className="column">
             <h2 className="subtitle is-2">Inference</h2>{" "}
             <div className="box">
+            <ResponsiveContainer width={700} height="80%">
               <ComposedChart
                 width={500}
                 height={400}
-                data={bottomData}
+                data={inference}
                 margin={{
                   top: 20,
                   right: 20,
@@ -227,15 +236,17 @@ export default function SubflowUI() {
                 <Bar dataKey="uv" barSize={20} fill="#413ea0" />
                 <Line type="monotone" dataKey="uv" stroke="#ff7300" />
               </ComposedChart>
+              </ResponsiveContainer>
             </div>
           </div>
           <div className="column">
             <h2 className="subtitle is-2">Training</h2>{" "}
             <div className="box">
+            <ResponsiveContainer width={700} height="80%">
               <ComposedChart
                 width={500}
                 height={400}
-                data={bottomData}
+                data={training}
                 margin={{
                   top: 20,
                   right: 20,
@@ -251,6 +262,7 @@ export default function SubflowUI() {
                 <Bar dataKey="uv" barSize={20} fill="#413ea0" />
                 <Line type="monotone" dataKey="uv" stroke="#ff7300" />
               </ComposedChart>
+              </ResponsiveContainer>
             </div>
           </div>
         </div>
