@@ -124,7 +124,7 @@ console.log(inferenceCPU);
             <div className="column">
             <h2 className="subtitle is-2">Inference (GPU)</h2>{" "}
             <div className="box">
-            <ResponsiveContainer width={700} height="80%">
+            <ResponsiveContainer width={700} height={700}>
             <LineChart
                 width={400}
                 height={400}
@@ -136,13 +136,13 @@ console.log(inferenceCPU);
                 <CartesianGrid stroke="#f5f5f5" />
                 <Line
                   type="monotone"
-                  dataKey="uv"
+                  dataKey="exec"
                   stroke="#ff7300"
                   yAxisId={0}
                 />
                 <Line
                   type="monotone"
-                  dataKey="pv"
+                  dataKey="exec_ns"
                   stroke="#387908"
                   yAxisId={1}
                 />
@@ -154,7 +154,7 @@ console.log(inferenceCPU);
             <div className="column">
             <h2 className="subtitle is-2">Inference (CPU)</h2>{" "}
             <div className="box">
-            <ResponsiveContainer width={700} height="80%">
+            <ResponsiveContainer width={700} height={700}>
               <LineChart
                 width={400}
                 height={400}
@@ -166,13 +166,13 @@ console.log(inferenceCPU);
                 <CartesianGrid stroke="#f5f5f5" />
                 <Line
                   type="monotone"
-                  dataKey="uv"
+                  dataKey="acc"
                   stroke="#ff7300"
                   yAxisId={0}
                 />
                 <Line
                   type="monotone"
-                  dataKey="pv"
+                  dataKey="acc_ns"
                   stroke="#387908"
                   yAxisId={1}
                 />
@@ -184,7 +184,7 @@ console.log(inferenceCPU);
           <div className="column">
             <h2 className="subtitle is-2">Training (GPU)</h2>{" "}
             <div className="box">
-            <ResponsiveContainer width={700} height="80%">
+            <ResponsiveContainer width={700} height={700}>
               <LineChart
                 width={400}
                 height={400}
@@ -196,13 +196,13 @@ console.log(inferenceCPU);
                 <CartesianGrid stroke="#f5f5f5" />
                 <Line
                   type="monotone"
-                  dataKey="uv"
+                  dataKey="exec"
                   stroke="#ff7300"
                   yAxisId={0}
                 />
                 <Line
                   type="monotone"
-                  dataKey="pv"
+                  dataKey="exec_ns"
                   stroke="#387908"
                   yAxisId={1}
                 />
@@ -216,7 +216,7 @@ console.log(inferenceCPU);
           <div className="column">
             <h2 className="subtitle is-2">Inference</h2>{" "}
             <div className="box">
-            <ResponsiveContainer width={700} height="80%">
+            <ResponsiveContainer width={700} height={700}>
               <ComposedChart
                 width={500}
                 height={400}
@@ -233,8 +233,8 @@ console.log(inferenceCPU);
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="uv" barSize={20} fill="#413ea0" />
-                <Line type="monotone" dataKey="uv" stroke="#ff7300" />
+                <Bar dataKey="exec" barSize={20} fill="#413ea0" />
+                <Line type="monotone" dataKey="exec_ns" stroke="#ff7300" />
               </ComposedChart>
               </ResponsiveContainer>
             </div>
@@ -242,7 +242,7 @@ console.log(inferenceCPU);
           <div className="column">
             <h2 className="subtitle is-2">Training</h2>{" "}
             <div className="box">
-            <ResponsiveContainer width={700} height="80%">
+            <ResponsiveContainer width={700} height={700}>
               <ComposedChart
                 width={500}
                 height={400}
@@ -259,8 +259,8 @@ console.log(inferenceCPU);
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="uv" barSize={20} fill="#413ea0" />
-                <Line type="monotone" dataKey="uv" stroke="#ff7300" />
+                <Bar dataKey="acc" barSize={20} fill="#413ea0" />
+                <Line type="monotone" dataKey="acc_ns" stroke="#ff7300" />
               </ComposedChart>
               </ResponsiveContainer>
             </div>
