@@ -20,6 +20,7 @@ import { data3 } from "./Data";
 // import { data5 } from "./Data";
 
 export default function SubflowUI() {
+
   // Set AlexNet as the default vesion
   const [inferenceGPU, setInferenceGPU] = useState(data[0]);
   const [inferenceCPU, setInferenceCPU] = useState(data[2]);
@@ -118,6 +119,7 @@ console.log(inferenceCPU);
             <div className="box">Image Here</div>
           </div>
           <br></br>
+
           </div>
 
           <div className="columns">
@@ -267,8 +269,5 @@ console.log(inferenceCPU);
           </div>
         </div>
 
-        </div>
-      </section>
-    </body>
   );
 }
