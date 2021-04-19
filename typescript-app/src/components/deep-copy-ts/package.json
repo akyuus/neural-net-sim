@@ -1,0 +1,68 @@
+{
+  "_from": "deep-copy-ts",
+  "_id": "deep-copy-ts@0.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-/3cgBcMkznRf5BM8wu6YWz3SQUkHzgh/v1TZFjevztLj9sMjFvNFBtpN4uUtPzw/rA/TldyD6c6LRL1zno4+YA==",
+  "_location": "/deep-copy-ts",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "deep-copy-ts",
+    "name": "deep-copy-ts",
+    "escapedName": "deep-copy-ts",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/deep-copy-ts/-/deep-copy-ts-0.5.0.tgz",
+  "_shasum": "b9493d8e2bae85ef7d659c16eb707c13efb84499",
+  "_spec": "deep-copy-ts",
+  "_where": "C:\\Users\\Rohaid Bakheet\\Documents\\neural-net-sim\\typescript-app",
+  "author": {
+    "name": "Erik Vullings",
+    "email": "erik.vullings@gmail.com",
+    "url": "http://www.tno.nl"
+  },
+  "bugs": {
+    "url": "https://github.com/erikvullings/deep-copy-ts/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A deep-copy utility function for TypeScript",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^24.9.1",
+    "babel-jest": "26.2.2",
+    "jest": "26.2.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.2"
+  },
+  "homepage": "https://github.com/erikvullings/deep-copy-ts#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "deep-copy-ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikvullings/deep-copy-ts.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "dry-run": "npm publish --dry-run",
+    "major-release": "npm run clean && npm run build && npm version major --force -m \"Major release\" && npm publish && git push --follow-tags",
+    "minor-release": "npm run clean && npm run build && npm version minor --force -m \"Minor release\" && npm publish && git push --follow-tags",
+    "patch-release": "npm run clean && npm run build && npm version patch --force -m \"Patch release\" && npm publish && git push --follow-tags",
+    "start": "tsc -w",
+    "test": "jest --runInBand --config .unit.jest.config.js"
+  },
+  "typings": "dist/index.d.ts",
+  "version": "0.5.0"
+}
