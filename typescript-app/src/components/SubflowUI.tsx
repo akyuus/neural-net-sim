@@ -114,160 +114,163 @@ console.log(inferenceCPU);
                 </label>
               </div>
             </div>
-
             <div className="column">
             <div className="box">Image Here</div>
           </div>
           <br></br>
-
           </div>
-
-          <div className="columns">
+          <div className="row">
             <div className="column">
-            <h2 className="subtitle is-2">Inference (GPU)</h2>{" "}
-            <div className="box">
-            <ResponsiveContainer width={700} height={700}>
-            <LineChart
-                width={400}
-                height={400}
-                data={inferenceGPU}
-                margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
-              >
-                <XAxis dataKey="name" />
-                <Tooltip />
-                <CartesianGrid stroke="#f5f5f5" />
-                <Line
-                  type="monotone"
-                  dataKey="exec"
-                  stroke="#ff7300"
-                  yAxisId={0}
-                />
-                <Line
-                  type="monotone"
-                  dataKey="exec_ns"
-                  stroke="#387908"
-                  yAxisId={1}
-                />
-              </LineChart>
-              </ResponsiveContainer>
+              <h2 className="subtitle is-2">Inference (GPU)</h2>{" "}
+              <div className="box">
+              <ResponsiveContainer width='100%' height={700}>
+              <LineChart
+                  width={400}
+                  height={400}
+                  data={inferenceGPU}
+                  margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
+                >
+                  <XAxis dataKey="name" />
+                  <Tooltip />
+                  <CartesianGrid stroke="#f5f5f5" />
+                  <Line
+                    type="monotone"
+                    dataKey="exec"
+                    stroke="#ff7300"
+                    yAxisId={0}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="exec_ns"
+                    stroke="#387908"
+                    yAxisId={1}
+                  />
+                </LineChart>
+                </ResponsiveContainer>
+              </div>
             </div>
-            </div>
-
+          </div>
+          <div className="row">
             <div className="column">
-            <h2 className="subtitle is-2">Inference (CPU)</h2>{" "}
-            <div className="box">
-            <ResponsiveContainer width={700} height={700}>
-              <LineChart
-                width={400}
-                height={400}
-                data={inferenceCPU}
-                margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
-              >
-                <XAxis dataKey="name" />
-                <Tooltip />
-                <CartesianGrid stroke="#f5f5f5" />
-                <Line
-                  type="monotone"
-                  dataKey="acc"
-                  stroke="#ff7300"
-                  yAxisId={0}
-                />
-                <Line
-                  type="monotone"
-                  dataKey="acc_ns"
-                  stroke="#387908"
-                  yAxisId={1}
-                />
-              </LineChart>
-              </ResponsiveContainer>
+              <h2 className="subtitle is-2">Inference (CPU)</h2>{" "}
+              <div className="box">
+              <ResponsiveContainer width='100%' height={700}>
+                <LineChart
+                  width={400}
+                  height={400}
+                  data={inferenceCPU}
+                  margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
+                >
+                  <XAxis dataKey="name" />
+                  <Tooltip />
+                  <CartesianGrid stroke="#f5f5f5" />
+                  <Line
+                    type="monotone"
+                    dataKey="acc"
+                    stroke="#ff7300"
+                    yAxisId={0}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="acc_ns"
+                    stroke="#387908"
+                    yAxisId={1}
+                  />
+                </LineChart>
+                </ResponsiveContainer>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="column">
+              <h2 className="subtitle is-2">Training (GPU)</h2>{" "}
+              <div className="box">
+              <ResponsiveContainer width='100%' height={700}>
+                <LineChart
+                  width={400}
+                  height={400}
+                  data={trainingGPU}
+                  margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
+                >
+                  <XAxis dataKey="name" />
+                  <Tooltip />
+                  <CartesianGrid stroke="#f5f5f5" />
+                  <Line
+                    type="monotone"
+                    dataKey="exec"
+                    stroke="#ff7300"
+                    yAxisId={0}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="exec_ns"
+                    stroke="#387908"
+                    yAxisId={1}
+                  />
+                </LineChart>
+                </ResponsiveContainer>
+              </div>
             </div>
           </div>
 
-          <div className="column">
-            <h2 className="subtitle is-2">Training (GPU)</h2>{" "}
-            <div className="box">
-            <ResponsiveContainer width={700} height={700}>
-              <LineChart
-                width={400}
-                height={400}
-                data={trainingGPU}
-                margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
-              >
-                <XAxis dataKey="name" />
-                <Tooltip />
-                <CartesianGrid stroke="#f5f5f5" />
-                <Line
-                  type="monotone"
-                  dataKey="exec"
-                  stroke="#ff7300"
-                  yAxisId={0}
-                />
-                <Line
-                  type="monotone"
-                  dataKey="exec_ns"
-                  stroke="#387908"
-                  yAxisId={1}
-                />
-              </LineChart>
-              </ResponsiveContainer>
+          <div className="row">
+            <div className="column">
+              <h2 className="subtitle is-2">Inference</h2>{" "}
+              <div className="box">
+              <ResponsiveContainer width='100%' height={700}>
+                <ComposedChart
+                  width={500}
+                  height={400}
+                  data={inference}
+                  margin={{
+                    top: 20,
+                    right: 20,
+                    bottom: 20,
+                    left: 20,
+                  }}
+                >
+                  <CartesianGrid stroke="#f5f5f5" />
+                  <XAxis dataKey="name" scale="band" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+                  <Bar dataKey="exec" barSize={20} fill="#413ea0" />
+                  <Line type="monotone" dataKey="exec_ns" stroke="#ff7300" />
+                </ComposedChart>
+                </ResponsiveContainer>
+              </div>
             </div>
           </div>
-          </div>
-
-          <div className="columns">
-          <div className="column">
-            <h2 className="subtitle is-2">Inference</h2>{" "}
-            <div className="box">
-            <ResponsiveContainer width={700} height={700}>
-              <ComposedChart
-                width={500}
-                height={400}
-                data={inference}
-                margin={{
-                  top: 20,
-                  right: 20,
-                  bottom: 20,
-                  left: 20,
-                }}
-              >
-                <CartesianGrid stroke="#f5f5f5" />
-                <XAxis dataKey="name" scale="band" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="exec" barSize={20} fill="#413ea0" />
-                <Line type="monotone" dataKey="exec_ns" stroke="#ff7300" />
-              </ComposedChart>
-              </ResponsiveContainer>
+          <div className="row">
+            <div className="column">
+              <h2 className="subtitle is-2">Training</h2>{" "}
+              <div className="box">
+              <ResponsiveContainer width='100%' height={700}>
+                <ComposedChart
+                  width={500}
+                  height={400}
+                  data={training}
+                  margin={{
+                    top: 20,
+                    right: 20,
+                    bottom: 20,
+                    left: 20,
+                  }}
+                >
+                  <CartesianGrid stroke="#f5f5f5" />
+                  <XAxis dataKey="name" scale="band" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+                  <Bar dataKey="acc" barSize={20} fill="#413ea0" />
+                  <Line type="monotone" dataKey="acc_ns" stroke="#ff7300" />
+                </ComposedChart>
+                </ResponsiveContainer>
+              </div>
             </div>
           </div>
-          <div className="column">
-            <h2 className="subtitle is-2">Training</h2>{" "}
-            <div className="box">
-            <ResponsiveContainer width={700} height={700}>
-              <ComposedChart
-                width={500}
-                height={400}
-                data={training}
-                margin={{
-                  top: 20,
-                  right: 20,
-                  bottom: 20,
-                  left: 20,
-                }}
-              >
-                <CartesianGrid stroke="#f5f5f5" />
-                <XAxis dataKey="name" scale="band" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="acc" barSize={20} fill="#413ea0" />
-                <Line type="monotone" dataKey="acc_ns" stroke="#ff7300" />
-              </ComposedChart>
-              </ResponsiveContainer>
-            </div>
-          </div>
-        </div>
-
+      </div>
+    </section>
+    </body>
   );
 }
