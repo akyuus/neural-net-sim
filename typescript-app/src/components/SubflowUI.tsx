@@ -12,6 +12,7 @@ import {
   ResponsiveContainer
 } from "recharts";
 import React, { useState } from "react";
+import Navigation from './Navigation';
 
 import { data } from "./Data";
 import { data2 } from "./Data";
@@ -76,7 +77,8 @@ console.log(inferenceCPU);
   
 
   return (
-    <body>
+    <div>
+      <Navigation />
       <section className="section">
         <div className="container">
           <h1 className="title">DNN Models</h1>
@@ -271,6 +273,6 @@ console.log(inferenceCPU);
           </div>
       </div>
     </section>
-    </body>
+    </div>
   );
 }
