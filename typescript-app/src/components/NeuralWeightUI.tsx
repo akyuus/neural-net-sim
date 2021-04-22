@@ -6,6 +6,7 @@ import {
     CartesianGrid,
     Tooltip
   } from "recharts";
+  import Navigation from './Navigation';
 
   const data = [{
     name: "Page A",
@@ -54,6 +55,7 @@ import {
 export default function NeuralWeightUI() {
     return (
         <body>
+            <Navigation />
             <section className="section">
                 <div className="container">
                     <h1 className="title">
