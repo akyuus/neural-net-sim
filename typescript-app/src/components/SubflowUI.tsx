@@ -73,7 +73,7 @@ export default function SubflowUI() {
                     name="DNN"
                     id="LeNet"
                     onChange={handleChange}
-                  ></input>
+                  ></input>{" "}
                   Le-Net5 (MNIST)
                 </label>
                 <br></br>
@@ -83,7 +83,7 @@ export default function SubflowUI() {
                     onChange={handleChange}
                     name="DNN"
                     id="AlexNet"
-                  ></input>
+                  ></input>{" "}
                   AlexNet (CIFAR-10)
                 </label>
                 <br></br>
@@ -93,7 +93,7 @@ export default function SubflowUI() {
                     name="DNN"
                     id="KWS"
                     onChange={handleChange}
-                  ></input>
+                  ></input>{" "}
                   KWS (GSC)
                 </label>
               </div>
@@ -129,6 +129,7 @@ export default function SubflowUI() {
             </div>
             </div>
             <div className="column">
+
             <h2 className="subtitle is-2">Inference (CPU)</h2>
             <div className="box" id="box_column">
             <div id ="graph">
@@ -147,12 +148,14 @@ export default function SubflowUI() {
                     <Line type="monotone" dataKey="acc" stroke="#8884d8" />
                     <Line type="monotone" dataKey="acc_ns" stroke="#82ca9d" />
                   </LineChart>
+
                 </ResponsiveContainer>
                 <h4 className="subtitle is-4 has-text-centered">Deadline (ms) </h4>
               </div>
             </div>
             </div>
             <div className="column">
+
               <h2 className="subtitle is-2">Training (GPU)</h2>{" "}
               <div className="box" id="box_column">
             <div id ="graph">
@@ -171,6 +174,7 @@ export default function SubflowUI() {
                     <Line type="monotone" dataKey="acc" stroke="#8884d8" />
                     <Line type="monotone" dataKey="acc_ns" stroke="#82ca9d" />
                   </LineChart>
+
                 </ResponsiveContainer>
                 <h4 className="subtitle is-4 has-text-centered">Deadline (ms) </h4>
               </div>
@@ -179,7 +183,7 @@ export default function SubflowUI() {
           </div>
           <div className="row">
             <div className="column">
-              <h2 className="subtitle is-2">Inference</h2>{" "}
+              <h2 className="subtitle is-2">Inference</h2>
               <div className="box">
                 <ResponsiveContainer width="100%" height={500}>
                   <ComposedChart
@@ -205,7 +209,7 @@ export default function SubflowUI() {
               </div>
             </div>
             <div className="column">
-              <h2 className="subtitle is-2">Training</h2>{" "}
+              <h2 className="subtitle is-2">Training</h2>
               <div className="box">
                 <ResponsiveContainer width="100%" height={500}>
                   <ComposedChart
