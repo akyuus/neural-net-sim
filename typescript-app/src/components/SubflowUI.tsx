@@ -125,7 +125,7 @@ console.log(inferenceCPU);
             <div className="column">
               <h2 className="subtitle is-2">Inference (GPU)</h2>{" "}
               <div className="box">
-              <ResponsiveContainer width='100%' height={700}>
+              <ResponsiveContainer width='100%' height={400}>
               <LineChart
                   width={400}
                   height={400}
@@ -151,12 +151,10 @@ console.log(inferenceCPU);
                 </ResponsiveContainer>
               </div>
             </div>
-          </div>
-          <div className="row">
             <div className="column">
               <h2 className="subtitle is-2">Inference (CPU)</h2>{" "}
               <div className="box">
-              <ResponsiveContainer width='100%' height={700}>
+              <ResponsiveContainer width='100%' height={400}>
                 <LineChart
                   width={400}
                   height={400}
@@ -182,12 +180,10 @@ console.log(inferenceCPU);
                 </ResponsiveContainer>
               </div>
             </div>
-          </div>
-          <div className="row">
             <div className="column">
               <h2 className="subtitle is-2">Training (GPU)</h2>{" "}
               <div className="box">
-              <ResponsiveContainer width='100%' height={700}>
+              <ResponsiveContainer width='100%' height={400}>
                 <LineChart
                   width={400}
                   height={400}
@@ -214,14 +210,13 @@ console.log(inferenceCPU);
               </div>
             </div>
           </div>
-
           <div className="row">
             <div className="column">
               <h2 className="subtitle is-2">Inference</h2>{" "}
               <div className="box">
-              <ResponsiveContainer width='100%' height={700}>
+              <ResponsiveContainer width='100%' height={500}>
                 <ComposedChart
-                  width={500}
+                  width={400}
                   height={400}
                   data={inference}
                   margin={{
@@ -242,14 +237,12 @@ console.log(inferenceCPU);
                 </ResponsiveContainer>
               </div>
             </div>
-          </div>
-          <div className="row">
             <div className="column">
               <h2 className="subtitle is-2">Training</h2>{" "}
               <div className="box">
-              <ResponsiveContainer width='100%' height={700}>
+              <ResponsiveContainer width='100%' height={500}>
                 <ComposedChart
-                  width={500}
+                  width={400}
                   height={400}
                   data={training}
                   margin={{
