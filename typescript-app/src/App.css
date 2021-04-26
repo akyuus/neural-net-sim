@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+#vertlabel { writing-mode: tb-rl;  position: relative; top: 300px;}
+#box_column {height: 500px;}
+#graph {position: relative; bottom:150px;}
