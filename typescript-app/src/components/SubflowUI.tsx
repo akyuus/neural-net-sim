@@ -91,7 +91,7 @@ console.log(inferenceCPU);
                     name="DNN"
                     id="LeNet"
                     onChange={handleChange}
-                  ></input>
+                  ></input>{" "}
                   Le-Net5 (MNIST)
                 </label>
                 <br></br>
@@ -101,7 +101,7 @@ console.log(inferenceCPU);
                     onChange={handleChange}
                     name="DNN"
                     id="AlexNet"
-                  ></input>
+                  ></input>{" "}
                   AlexNet (CIFAR-10)
                 </label>
                 <br></br>
@@ -111,7 +111,7 @@ console.log(inferenceCPU);
                     name="DNN"
                     id="KWS"
                     onChange={handleChange}
-                  ></input>
+                  ></input>{" "}
                   KWS (GSC)
                 </label>
               </div>
@@ -123,7 +123,7 @@ console.log(inferenceCPU);
           </div>
           <div className="row">
             <div className="column">
-              <h2 className="subtitle is-2">Inference (GPU)</h2>{" "}
+              <h2 className="subtitle is-2">Inference (GPU)</h2>
               <div className="box">
               <ResponsiveContainer width='100%' height={400}>
               <LineChart
@@ -152,7 +152,7 @@ console.log(inferenceCPU);
               </div>
             </div>
             <div className="column">
-              <h2 className="subtitle is-2">Inference (CPU)</h2>{" "}
+              <h2 className="subtitle is-2">Inference (CPU)</h2>
               <div className="box">
               <ResponsiveContainer width='100%' height={400}>
                 <LineChart
@@ -181,7 +181,7 @@ console.log(inferenceCPU);
               </div>
             </div>
             <div className="column">
-              <h2 className="subtitle is-2">Training (GPU)</h2>{" "}
+              <h2 className="subtitle is-2">Training (GPU)</h2>
               <div className="box">
               <ResponsiveContainer width='100%' height={400}>
                 <LineChart
@@ -212,7 +212,7 @@ console.log(inferenceCPU);
           </div>
           <div className="row">
             <div className="column">
-              <h2 className="subtitle is-2">Inference</h2>{" "}
+              <h2 className="subtitle is-2">Inference</h2>
               <div className="box">
               <ResponsiveContainer width='100%' height={500}>
                 <ComposedChart
@@ -238,7 +238,7 @@ console.log(inferenceCPU);
               </div>
             </div>
             <div className="column">
-              <h2 className="subtitle is-2">Training</h2>{" "}
+              <h2 className="subtitle is-2">Training</h2>
               <div className="box">
               <ResponsiveContainer width='100%' height={500}>
                 <ComposedChart
