@@ -227,7 +227,7 @@ console.log(inferenceCPU);
                   }}
                 >
                   <CartesianGrid stroke="#f5f5f5" />
-                  <XAxis dataKey="name" scale="band" />
+                  <XAxis dataKey="name" />
                   <YAxis />
                   <Tooltip />
                   <Legend />
@@ -253,7 +253,7 @@ console.log(inferenceCPU);
                   }}
                 >
                   <CartesianGrid stroke="#f5f5f5" />
-                  <XAxis dataKey="name" scale="band" />
+                  <XAxis dataKey="name" />
                   <YAxis />
                   <Tooltip />
                   <Legend />
