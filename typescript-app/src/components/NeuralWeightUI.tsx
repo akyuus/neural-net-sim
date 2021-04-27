@@ -7,6 +7,7 @@ import {
     Tooltip
   } from "recharts";
   import Navigation from './Navigation';
+import fisherdata from './fisherdata.json';
 
   const data = [{
     name: "Page A",
@@ -115,6 +116,23 @@ export default function NeuralWeightUI() {
                                 <CartesianGrid stroke="#f5f5f5" />
                                 <Line type="monotone" dataKey="uv" stroke="#ff7300" yAxisId={0} />
                                 <Line type="monotone" dataKey="pv" stroke="#387908" yAxisId={1} />
+                                </LineChart>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <h2 className="subtitle is-2">Fisher Data</h2>
+                            <div className="box">
+                                <LineChart
+                                width={600}
+                                height={400}
+                                data={fisherdata}
+                                margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
+                                >
+                                <XAxis dataKey="name" />
+                                <Tooltip />
+                                <CartesianGrid stroke="#f5f5f5" />
+                                <Line type="monotone" dataKey="fisher" dot={false} stroke="#ff7300" yAxisId={0} />
+                                <Line type="monotone" dataKey="smooth_fisher" dot={false} stroke="#387908" yAxisId={1} />
                                 </LineChart>
                             </div>
                         </div>
