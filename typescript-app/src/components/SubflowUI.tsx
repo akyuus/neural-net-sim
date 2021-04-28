@@ -14,17 +14,23 @@ import {
 import React, { useState } from "react";
 import Navigation from "./Navigation";
 
-import { data } from "./Data";
-import { data2 } from "./Data";
-import { data3 } from "./Data";
+import {generateData} from "./dataset";
+const data = generateData() ;
+const data2 = generateData() ;
+const data3 = generateData() ;
+
 
 export default function SubflowUI() {
-  // Set AlexNet as the default vesion
+
   const [inferenceGPU, setInferenceGPU] = useState(data[1]);
   const [inferenceCPU, setInferenceCPU] = useState(data[3]);
   const [trainingGPU, setTrainingGPU] = useState(data[5]);
   const [inference, setInference] = useState(data[0]);
   const [training, setTraining] = useState(data[4]);
+
+  // Input: Event Object
+  // Function: To switch the data of the graphs once a different DNN is chosen using the target.id
+  // Output: None
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     switch (e.target.id) {
@@ -83,7 +89,7 @@ export default function SubflowUI() {
                     onChange={handleChange}
                     name="DNN"
                     id="AlexNet"
-                  ></input>{" "}
+                  defaultChecked></input>{" "}
                   AlexNet (CIFAR-10)
                 </label>
                 <br></br>
@@ -106,8 +112,10 @@ export default function SubflowUI() {
           <div className="row">
             <div className="column">
             <h2 className="subtitle is-2">Inference (GPU)</h2>
+            {/* The box_column id removes extra whitespace*/}
             <div className="box" id="box_column">
             <div id ="graph">
+               {/* The vertlabel id allows for a vertical y-Axis label and proper placement*/}
                 <h4 className="subtitle is-4" id="vertlabel"> Accuracy (%) </h4>
                 <ResponsiveContainer width="100%" height={400}>
                   <LineChart
