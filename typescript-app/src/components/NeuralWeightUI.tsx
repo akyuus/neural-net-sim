@@ -55,7 +55,7 @@ import fisherdata from './fisherdata.json';
 
 export default function NeuralWeightUI() {
     return (
-        <body>
+        <div>
             <Navigation />
             <section className="section">
                 <div className="container">
@@ -175,6 +175,6 @@ export default function NeuralWeightUI() {
                     </div>
                 </div>
             </section>
-        </body>
+        </div>
     );
 }
