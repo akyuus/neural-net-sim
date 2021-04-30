@@ -79,7 +79,6 @@ export default function NeuralWeightUI() {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         switch (e.target.id) {
         case "AlexNet": {
-            console.log("alex");
             // setTopData(data);
             // setBottomData(data2);
             setInferenceGPU(data[0]);
@@ -90,7 +89,6 @@ export default function NeuralWeightUI() {
             break;
         }
         case "KWS": {
-            console.log("KWS");
             // setTopData(data3);
             // setBottomData(data4);
             setInferenceGPU(data2[0]);
@@ -101,7 +99,6 @@ export default function NeuralWeightUI() {
             break;
         }
         case "LeNet": {
-            console.log("LeNet");
             // setTopData(data);
             // setBottomData(data5);
             setInferenceGPU(data3[0]);
@@ -116,10 +113,6 @@ export default function NeuralWeightUI() {
         }
         }
     };
-    console.log("inference");
-    console.log(inference);
-    console.log("inference CPU");
-    console.log(inferenceCPU);
 
 
     return (
