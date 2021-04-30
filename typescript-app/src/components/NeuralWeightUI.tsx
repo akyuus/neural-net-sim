@@ -13,6 +13,8 @@ import {
   } from "recharts";
 
 import Navigation from './Navigation';
+import fisherdata from './fisherdata.json';
+
 import React, { useState } from "react";
 
 import { data } from "./Data";
