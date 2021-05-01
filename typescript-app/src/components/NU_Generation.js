@@ -11,17 +11,21 @@ export function generateData2() {
         let tg_time = -11.53333 + 351.6373*fraction - 1366.958*Math.pow(fraction,2) + 2440.793*Math.pow(fraction,3) - 1763.403 * Math.pow(fraction,4) + 410.2564 * Math.pow(fraction,5);
        
         inference_time.push({
-            network_utilization: fraction, 
-            "GPU (L)": ig_time, 
-            "CPU (L)": ic_time, 
-            "Accuracy (R)": accuracy,
+            network_utilization: fraction *= addRandomness(), 
+            "GPU (L)": ig_time *= addRandomness(), 
+            "CPU (L)": ic_time *= addRandomness(), 
+            "Accuracy (R)": accuracy *= addRandomness(),
         });
         training_time.push({
-            network_utilization: fraction,
-            "GPU (single train-iteration)": tg_time,
+            network_utilization: fraction *= addRandomness(),
+            "GPU (single train-iteration)": tg_time *= addRandomness(),
         });
         
     }
 
     return [inference_time, training_time ];
+}
+
+function addRandomness() {
+    return Math.random()*(1.10-0.85) + 0.85;
 }
