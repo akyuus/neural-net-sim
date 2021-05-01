@@ -1,9 +1,4 @@
-export let inference_gpu_execution_data = [];
-export let inference_gpu_accuracy_data = [];
-export let inference_cpu_execution_data = [];
-export let inference_cpu_accuracy_data = [];
-export let training_execution_data = [];
-export let training_accuracy_data = [];
+
 
 const ig_max = 12;
 const ic_max = 34;
@@ -29,6 +24,13 @@ function getRandomArbitrary(min, max) {
 }
 
 export function generateData() {
+let inference_gpu_execution_data = [];
+let inference_gpu_accuracy_data = [];
+let inference_cpu_execution_data = [];
+let inference_cpu_accuracy_data = [];
+let training_execution_data = [];
+let training_accuracy_data = [];
+
     for(let i = 0; i < 100; i++) {
         let name = i+1;
         let ig_deadline = getRandomArbitrary(5, 15);
@@ -55,8 +57,9 @@ export function generateData() {
         });
         inference_gpu_accuracy_data.push({
             name: `${name}`,
-            acc: ig_acc,
-            acc_ns: ig_acc_ns
+            SubFlow: ig_acc,
+            "Non-SubFlow": ig_acc_ns,
+            deadline: ig_deadline,
         });
         inference_cpu_execution_data.push({
             name: `${name}`, 
@@ -66,8 +69,9 @@ export function generateData() {
         });
         inference_cpu_accuracy_data.push({
             name: `${name}`,
-            acc: ic_acc,
-            acc_ns: ic_acc_ns
+            SubFlow: ic_acc,
+            "Non-SubFlow": ic_acc_ns,
+            deadline: ic_deadline,
         });
         training_execution_data.push({
             name: `${name}`, 
@@ -77,8 +81,12 @@ export function generateData() {
         });
         training_accuracy_data.push({
             name: `${name}`,
-            acc: t_acc,
-            acc_ns: t_acc_ns
+            SubFlow: t_acc,
+            "Non-SubFlow": t_acc_ns,
+            deadline: t_deadline,
         });
     }
+
+    return [inference_gpu_execution_data, inference_gpu_accuracy_data, inference_cpu_execution_data, 
+    inference_cpu_accuracy_data, training_execution_data, training_accuracy_data ];
 }
