@@ -1,6 +1,6 @@
 
 import {generateData2} from "./NU_Generation";
-import Gif from "../icons/Gif.gif";
+// import Gif from "../icons/Gif.gif";
 import "../styles.css";
 import {
   LineChart,
@@ -124,7 +124,7 @@ export default function SubflowUI() {
               <h1 className="title">Image Recognition</h1>
               <div className="box">
                 <figure className="image">
-                  <img src={Gif} alt="gif" />
+                  <img src="https://i.imgur.com/wZNoRfL.gif" alt="gif" />
                 </figure>
               </div>
             </div>

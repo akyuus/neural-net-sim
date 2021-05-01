@@ -6,7 +6,8 @@ import {
     CartesianGrid,
     Tooltip
   } from "recharts";
-  import Navigation from './Navigation';
+
+import Navigation from './Navigation';
 import fisherdata from './fisherdata.json';
 
   const data = [{

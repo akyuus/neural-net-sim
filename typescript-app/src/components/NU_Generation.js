@@ -1,7 +1,7 @@
 
 export function generateData2() {
-let inference_time = [];
-let training_time = [];
+    let inference_time = [];
+    let training_time = [];
 
     for(let i = 1; i <= 10; i++) {
         let fraction = (i/10);

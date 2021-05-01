@@ -24,12 +24,12 @@ function getRandomArbitrary(min, max) {
 }
 
 export function generateData() {
-let inference_gpu_execution_data = [];
-let inference_gpu_accuracy_data = [];
-let inference_cpu_execution_data = [];
-let inference_cpu_accuracy_data = [];
-let training_execution_data = [];
-let training_accuracy_data = [];
+    let inference_gpu_execution_data = [];
+    let inference_gpu_accuracy_data = [];
+    let inference_cpu_execution_data = [];
+    let inference_cpu_accuracy_data = [];
+    let training_execution_data = [];
+    let training_accuracy_data = [];
 
     for(let i = 0; i < 100; i++) {
         let name = i+1;
