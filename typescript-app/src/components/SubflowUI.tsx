@@ -124,7 +124,7 @@ export default function SubflowUI() {
               <h1 className="title">Image Recognition</h1>
               <div className="box">
                 <figure className="image">
-                  <img src={Gif} />
+                  <img src={Gif} alt="gif" />
                 </figure>
               </div>
             </div>
