@@ -1,11 +1,15 @@
 import "../styles.css";
 import PageSet from "./PageSet";
+import PageMatching from "./PageMatching";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Label } from "recharts";
 
 import Navigation from "./Navigation";
 import fisherdata from "./fisherdata.json";
 
 export default function NeuralWeightUI() {
+
+
+
   return (
     <div>
       <Navigation />
@@ -29,7 +33,7 @@ export default function NeuralWeightUI() {
               information can be found in Lee and Nirjon's paper.
             </p>
           </div>
-          <div className="columns">
+          {/* <div className="columns">
             <div className="column">
               <h1 className="title is-3 has-text-centered"> PAGE SELECTION </h1>
               <div className="box">
@@ -44,7 +48,7 @@ export default function NeuralWeightUI() {
                     <label htmlFor="main-pages">PAGES:</label>{" "}
                     <input
                       type="number"
-                      id="main-pages"
+                      id="main-pages-mem"
                       name="main-pages"
                       min="0"
                       max="20"
@@ -60,7 +64,7 @@ export default function NeuralWeightUI() {
                     <label htmlFor="main-pages">PAGES:</label>{" "}
                     <input
                       type="number"
-                      id="main-pages"
+                      id="main-pages-1"
                       name="main-pages"
                       min="0"
                       max="20"
@@ -76,7 +80,7 @@ export default function NeuralWeightUI() {
                     <label htmlFor="main-pages">PAGES:</label>{" "}
                     <input
                       type="number"
-                      id="main-pages"
+                      id="main-pages-2"
                       name="main-pages"
                       min="0"
                       max="20"
@@ -85,7 +89,7 @@ export default function NeuralWeightUI() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="columns">
             <div className="column">
               <div className="box">
@@ -141,24 +145,25 @@ export default function NeuralWeightUI() {
                     </div>
                   </div>
                   <div className="column is-three-fifths">
-                  <h3
+                  {/* <h3
                       className="subtitle is-2 has-text-centered"
                     > NEURAL WEIGHT VIRTULIZATION
-                        </h3>
+                        </h3> */}
                 <div id="page_set_location">
-                  <PageSet
-                  viewHeight={480}
-                  viewWidth={1080}
-                  pct_size={5}
-                  x__={0}
-                  y__={0}
-                  paths={5}
-                  pagesm={16}
-                  pages1={10}
-                  pages2={8}
-                />
+                    <PageSet pct_size={5}
+                    x__={0}
+                    y__={0}
+                    pagesm={8}
+                    pages1={6}
+                    pages2={7}
+                    viewWidth={1080}
+                    viewHeight={480}
+                    />
                 </div>
                   </div>
+                  <script>
+
+                  </script>
                 </div>
                 <div className="columns">
                     <div className="column">
