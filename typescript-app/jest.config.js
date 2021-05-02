@@ -11,5 +11,5 @@ module.exports = {
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"], //The moduleFileExtensions tells Jest to recognize our file extensions. 
                                                                   //This is needed as we add ts/tsx into the defaults (js|jsx|json|node).
   snapshotSerializers: ["enzyme-to-json/serializer"],
-  setupTestFrameworkScriptFile: "<rootDir>/src/setupEnzyme.ts",
+  setupFilesAfterEnv: ["<rootDir>/src/setupEnzyme.ts"],
   }
