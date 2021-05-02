@@ -1,4 +1,5 @@
 import "../styles.css";
+import PageSet from './PageSet';
 import {
     LineChart,
     Line,
@@ -106,18 +107,7 @@ export default function NeuralWeightUI() {
                         <div className="col">
                             <h2 className="subtitle is-2">Graph 1</h2>
                             <div className="box">
-                                <LineChart
-                                width={400}
-                                height={400}
-                                data={data}
-                                margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
-                                >
-                                <XAxis dataKey="name" />
-                                <Tooltip />
-                                <CartesianGrid stroke="#f5f5f5" />
-                                <Line type="monotone" dataKey="uv" stroke="#ff7300" yAxisId={0} />
-                                <Line type="monotone" dataKey="pv" stroke="#387908" yAxisId={1} />
-                                </LineChart>
+                            <PageSet viewHeight={480} viewWidth={1080} pct_size={5} x__={0} y__={0} paths={5} pagesm={16} pages1={10} pages2={8} />
                             </div>
                         </div>
                         <div className="col">

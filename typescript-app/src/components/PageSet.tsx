@@ -33,8 +33,8 @@ const PageSet = ({pct_size,x__,y__,paths,pagesm,pages1,pages2,viewWidth,viewHeig
     row = [];
     let counter = 0;
     const colorArray = ["#94c356", "#46a4cc"];
-    
-    let left = [];
+    let arr: number[];
+    let left:number[][] = [];
 
     if(pages1 % 2 == 1) {
       odd = 1;
@@ -55,14 +55,21 @@ const PageSet = ({pct_size,x__,y__,paths,pagesm,pages1,pages2,viewWidth,viewHeig
         if(odd === 1 && j === (pages1/2)-1 && i === 2-1){break;}
     
         row.push(newRect);
-        left.push([(x+(pct_size/100)*viewWidth),(y+(((pct_size/100)*viewWidth)/2))]);
+        
+        let x_ = (x+(pct_size/100)*viewWidth);
+        let y_ = (y+(((pct_size/100)*viewWidth)/2));
+
+        arr=[];
+        arr.push(x_);
+        arr.push(y_);
+        left.push(arr);
       }
     }
     setItems1(row);
 
     odd = 0;
 
-    let right = [];
+    let right:number[][] = [];
 
     if(pages2 % 2 == 1) {
       odd = 1;
@@ -99,7 +106,7 @@ const PageSet = ({pct_size,x__,y__,paths,pagesm,pages1,pages2,viewWidth,viewHeig
     }
     row = [];
 
-    let middle = [];
+    let middle:number[][] = [];
 
     for (let j = 0; j < pagesm/2; j++) {
       for (let i = 0; i < 2; i++) {
