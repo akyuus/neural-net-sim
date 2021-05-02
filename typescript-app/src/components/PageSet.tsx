@@ -205,28 +205,9 @@ function handle2Change(e) {
       <div className="column">
         <div className="box">
           <div className="columns">
-            <div className="column">
+          <div className="column">
               <h3
                 className="title is-4 has-text-centered"
-                id="text_center"
-              >
-                MAIN MEMORY
-              </h3>
-              <label htmlFor="main-pages">PAGES:</label>{" "}
-              <input
-                type="number"
-                id="main-pages-mem"
-                name="main-pages"
-                min="0"
-                max="20"
-                onChange={handleMChange}
-                value={MemPages}
-              />
-            </div>
-            <div className="column">
-              <h3
-                className="title is-4 has-text-centered"
-                id="text_center"
               >
                 DNN 1
               </h3>
@@ -244,7 +225,23 @@ function handle2Change(e) {
             <div className="column">
               <h3
                 className="title is-4 has-text-centered"
-                id="text_center"
+              >
+                MAIN MEMORY
+              </h3>
+              <label htmlFor="main-pages">PAGES:</label>{" "}
+              <input
+                type="number"
+                id="main-pages-mem"
+                name="main-pages"
+                min="0"
+                max="20"
+                onChange={handleMChange}
+                value={MemPages}
+              />
+            </div>
+            <div className="column">
+              <h3
+                className="title is-4 has-text-centered"
               >
                 DNN 2
               </h3>
