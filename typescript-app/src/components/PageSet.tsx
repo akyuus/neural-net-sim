@@ -36,7 +36,7 @@ const PageSet = ({pct_size,x__,y__,paths,pagesm,pages1,pages2,viewWidth,viewHeig
     let arr: number[];
     let left:number[][] = [];
 
-    if(pages1 % 2 == 1) {
+    if(pages1 % 2 === 1) {
       odd = 1;
       pages1+=1;
     }
@@ -71,7 +71,7 @@ const PageSet = ({pct_size,x__,y__,paths,pagesm,pages1,pages2,viewWidth,viewHeig
 
     let right:number[][] = [];
 
-    if(pages2 % 2 == 1) {
+    if(pages2 % 2 === 1) {
       odd = 1;
       pages2+=1;
     }
@@ -100,7 +100,7 @@ const PageSet = ({pct_size,x__,y__,paths,pagesm,pages1,pages2,viewWidth,viewHeig
 
     odd = 0;
 
-    if(pagesm % 2 == 1) {
+    if(pagesm % 2 === 1) {
       odd = 1;
       pagesm+=1;
     }
@@ -154,15 +154,15 @@ const PageSet = ({pct_size,x__,y__,paths,pagesm,pages1,pages2,viewWidth,viewHeig
           {
        itemsm.map( (n) =>{return (<rect x={n.x.baseVal.valueInSpecifiedUnits} y={n.y.baseVal.valueInSpecifiedUnits}width={n.width.baseVal.valueAsString} height={n.height.baseVal.valueAsString} fill={n.getAttribute("fill")?.toString()} />)})
      }
-          {/* <path  stroke-width="5px" stroke="rgba(200,100,100,200)"
+          {/* <path  strokeWidth="5px" stroke="rgba(200,100,100,200)"
           d="M100 112, 243 112"/>
-          <path  stroke-width="5px" stroke="rgba(200,100,100,200)"
+          <path  strokeWidth="5px" stroke="rgba(200,100,100,200)"
           d="M100 100, 150 100"/>  
-          <path stroke-width="5px" stroke="rgba(200,100,100,200)"
+          <path strokeWidth="5px" stroke="rgba(200,100,100,200)"
           d="M150 100, 150 150"/>   */}
          { 
             items.map( (n) =>{ const d = n.getAttribute("d");
-            if(d) return (<path stroke-width="5px" stroke="rgba(200,100,100,200)" d={d}/>)})
+            if(d) return (<path strokeWidth="5px" stroke="rgba(200,100,100,200)" d={d}/>)})
      }
 \
    </svg>);
