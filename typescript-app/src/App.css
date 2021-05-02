@@ -41,3 +41,6 @@
 #box_column {height: 500px;}
 #graph {position: relative; bottom:150px;}
 #title_section {padding-bottom:0%}
+#text_center {position: relative; right:50px}
+#page_set_location {position: relative; right: 30px}
+#top_row {height: 320px}
