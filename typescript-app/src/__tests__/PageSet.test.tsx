@@ -15,7 +15,6 @@ describe('PageSet with certain values', () => {
             pct_size={5}
             x__={0}
             y__={0}
-            paths={5}
             pagesm={16}
             pages1={10}
             pages2={8} /></Router>

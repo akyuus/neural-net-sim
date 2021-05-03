@@ -1,6 +1,6 @@
-import { render } from 'enzyme';
+// import { render } from 'enzyme';
 import {useState, useEffect} from 'react';
-import PageMatching from './PageMatching';
+// import PageMatching from './PageMatching';
 
 export interface Set {
   pct_size: number,
@@ -256,17 +256,17 @@ function handle2Change(e) {
         </div>
       </div>
     </div>
-    <svg id="render" width={viewWidth} height={viewHeight} viewBox="0 0 1080 480">
-      <g>
+    <svg key={Math.floor(Math.random() * 50000)} id="render" width={viewWidth} height={viewHeight} viewBox="0 0 1080 480">
+      <g key={Math.floor(Math.random() * 50000)}>
 
     { 
             items.map( (n) =>{ const d = n.getAttribute("d");
-            if(d) return (<path strokeWidth="5px" stroke="rgba(0,0,0,0.42)" d={d}/>)})
+            if(d) return (<path key={Math.floor(Math.random() * 50000)} strokeWidth="5px" stroke="rgba(0,0,0,0.42)" d={d}/>)})
      }
-      <g fill="skyblue" stroke="skyblue" strokeWidth="4" >
+      <g key={Math.floor(Math.random() * 50000)} fill="skyblue" stroke="skyblue" strokeWidth="4" >
      {
        items1.map( (n) =>{ 
-         return (<rect x={n.x.baseVal.valueInSpecifiedUnits} y={n.y.baseVal.valueInSpecifiedUnits}width={n.width.baseVal.valueAsString} height={n.height.baseVal.valueAsString} />)})
+         return (<rect key={Math.floor(Math.random() * 50000)} x={n.x?.baseVal.valueInSpecifiedUnits} y={n.y?.baseVal.valueInSpecifiedUnits}width={n.width?.baseVal.valueAsString} height={n.height?.baseVal.valueAsString} />)})
      }
           {
        items2.map( (n) =>{return (<rect key={Math.floor(Math.random() * 50000)} x={n.x?.baseVal.valueInSpecifiedUnits} y={n.y?.baseVal.valueInSpecifiedUnits}width={n.width?.baseVal.valueAsString} height={n.height?.baseVal.valueAsString} />)})
