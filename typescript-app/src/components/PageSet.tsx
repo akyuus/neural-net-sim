@@ -76,7 +76,7 @@ function handle2Change(e) {
     let paths:number=0;
     if(pages1>pages2) {paths=pages1} 
     else {paths=pages2};
-    console.log(paths+"-paths...UseEffect")
+    // console.log(paths+"-paths...UseEffect")
 
     const svgns = "http://www.w3.org/2000/svg";
     let x;
