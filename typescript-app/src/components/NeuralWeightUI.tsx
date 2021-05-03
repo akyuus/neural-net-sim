@@ -26,7 +26,7 @@ export default function NeuralWeightUI() {
             <p className="is-large">
               The Neural Weight Virtulization method, developed by Seulki Lee
               and Shahriar Nirjon, is a method that allows for multiple Deep
-              Neural Netorks (DNN) to be packaged in the a small space. This
+              Neural Networks (DNN) to be packaged in the a small space. This
               method optimizes data storage by having Neural Network who have
               the same weights share a page in main memory. The Neural Weight
               Virtulization UI page is a tool to allow users to witness first
