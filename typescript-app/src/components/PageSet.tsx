@@ -143,16 +143,16 @@ const PageSet = ({pct_size,x__,y__,paths,pagesm,pages1,pages2,viewWidth,viewHeig
 
   }, []);
 
-    return(<svg width={viewWidth} height={viewHeight} viewBox="0 0 1080 480">
+    return(<svg key={Math.floor(Math.random() * 50000)} width={viewWidth} height={viewHeight} viewBox="0 0 1080 480">
 
      {
-       items1.map( (n) =>{return (<rect x={n.x.baseVal.valueInSpecifiedUnits} y={n.y.baseVal.valueInSpecifiedUnits}width={n.width.baseVal.valueAsString} height={n.height.baseVal.valueAsString} />)})
+       items1.map( (n) =>{return (<rect key={Math.floor(Math.random() * 50000)} x={n.x?.baseVal.valueInSpecifiedUnits} y={n.y?.baseVal.valueInSpecifiedUnits}width={n.width?.baseVal.valueAsString} height={n.height?.baseVal.valueAsString} />)})
      }
           {
-       items2.map( (n) =>{return (<rect x={n.x.baseVal.valueInSpecifiedUnits} y={n.y.baseVal.valueInSpecifiedUnits}width={n.width.baseVal.valueAsString} height={n.height.baseVal.valueAsString} />)})
+       items2.map( (n) =>{return (<rect key={Math.floor(Math.random() * 50000)} x={n.x?.baseVal.valueInSpecifiedUnits} y={n.y?.baseVal.valueInSpecifiedUnits}width={n.width?.baseVal.valueAsString} height={n.height?.baseVal.valueAsString} />)})
      }
           {
-       itemsm.map( (n) =>{return (<rect x={n.x.baseVal.valueInSpecifiedUnits} y={n.y.baseVal.valueInSpecifiedUnits}width={n.width.baseVal.valueAsString} height={n.height.baseVal.valueAsString} fill={n.getAttribute("fill")?.toString()} />)})
+       itemsm.map( (n) =>{return (<rect key={Math.floor(Math.random() * 50000)} x={n.x?.baseVal.valueInSpecifiedUnits} y={n.y?.baseVal.valueInSpecifiedUnits}width={n.width?.baseVal.valueAsString} height={n.height?.baseVal.valueAsString} fill={n.getAttribute("fill")?.toString()} />)})
      }
           {/* <path  strokeWidth="5px" stroke="rgba(200,100,100,200)"
           d="M100 112, 243 112"/>
@@ -162,7 +162,7 @@ const PageSet = ({pct_size,x__,y__,paths,pagesm,pages1,pages2,viewWidth,viewHeig
           d="M150 100, 150 150"/>   */}
          { 
             items.map( (n) =>{ const d = n.getAttribute("d");
-            if(d) return (<path strokeWidth="5px" stroke="rgba(200,100,100,200)" d={d}/>)})
+            if(d) return (<path key={Math.floor(Math.random() * 50000)} strokeWidth="5px" stroke="rgba(200,100,100,200)" d={d}/>)})
      }
 \
    </svg>);

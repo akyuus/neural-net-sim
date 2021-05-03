@@ -11,7 +11,7 @@ export default function NeuralWeightUI() {
       <Navigation />
       <section className="section" id="title_section">
         <h1 className="has-text-centered title is-1">
-          NEURAL WEIGHT VIRTULIZATION
+          NEURAL WEIGHT VIRTUALIZATION
         </h1>
       </section>
       <section className="section">

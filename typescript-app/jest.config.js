@@ -12,4 +12,6 @@ module.exports = {
                                                                   //This is needed as we add ts/tsx into the defaults (js|jsx|json|node).
   snapshotSerializers: ["enzyme-to-json/serializer"],
   setupFilesAfterEnv: ["<rootDir>/src/setupEnzyme.ts"],
+  transformIgnorePatterns: ["node_modules/(?!@ngrx|(?!deck.gl)|ng-dynamic)"],
+  collectCoverageFrom: ["src/components/{!(dataset),}.js"]
   }

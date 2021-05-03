@@ -1,6 +1,3 @@
-
-import {generateData2} from "./NU_Generation";
-// import Gif from "../icons/Gif.gif";
 import "../styles.css";
 import {
   LineChart,
@@ -19,7 +16,133 @@ import {
 import React, { useState } from "react";
 import Navigation from "./Navigation";
 
-import { generateData } from "./dataset";
+// import { generateData } from "./dataset";
+
+const ig_max = 12;
+const ic_max = 34;
+const t_max = 18;
+
+/**
+ * 
+ * @param {Number} f 
+ * @returns {Number}
+ */
+ function roundTo4(f) {
+    return Math.round(f*10000)/10000.0;
+}
+
+/**
+ * 
+ * @param {Number} min 
+ * @param {Number} max 
+ * @returns {Number}
+ */
+function getRandomArbitrary(min, max) {
+    return roundTo4(Math.random() * (max - min) + min);
+}
+
+const generateData = () => {
+    let inference_gpu_execution_data = [{}];
+    let inference_gpu_accuracy_data = [{}];
+    let inference_cpu_execution_data = [{}];
+    let inference_cpu_accuracy_data = [{}];
+    let training_execution_data = [{}];
+    let training_accuracy_data = [{}];
+
+    for(let i = 0; i < 100; i++) {
+        let name = i+1;
+        let ig_deadline = getRandomArbitrary(5, 15);
+        let ic_deadline = getRandomArbitrary(20, 40);
+        let t_deadline = getRandomArbitrary(5, 30);
+        let ig_exec = (ig_deadline < ig_max) ? roundTo4(getRandomArbitrary(0.8, 0.99) * ig_deadline) : roundTo4(0.9999 * ig_deadline);
+        let ig_exec_ns = (ig_deadline < ig_max) ? 0 : ig_max;
+        let ic_exec = (ic_deadline < ic_max) ? roundTo4(getRandomArbitrary(0.8, 0.99) * ic_deadline) : roundTo4(0.9999 * ic_deadline);
+        let ic_exec_ns = (ic_deadline < ic_max) ? 0 : ic_max;
+        let t_exec = (t_deadline < t_max) ? roundTo4(getRandomArbitrary(0.8, 0.99) * t_deadline) : roundTo4(0.9999 * t_deadline);
+        let t_exec_ns = (t_deadline < t_max) ? 0 : t_max;
+        let ig_acc = (ig_deadline < ig_max && ig_deadline/ig_max < 0.83) ? roundTo4(1.2 * ig_deadline/ig_max) : 0.9999;
+        let ig_acc_ns = (ig_deadline < ig_max) ? 0 : 0.9999;
+        let ic_acc = (ic_deadline < ic_max && ic_deadline/ic_max < 0.83) ? roundTo4(1.2 * ic_deadline/ic_max) : 0.9999;
+        let ic_acc_ns = (ic_deadline < ic_max) ? 0 : 0.9999;
+        let t_acc = (t_deadline < t_max && t_deadline/t_max < 0.83) ? roundTo4(1.2 * t_deadline/t_max) : 0.9999;
+        let t_acc_ns = (t_deadline < t_max) ? 0 : 0.9999;
+    
+        inference_gpu_execution_data.push({
+            name: `${name}`, 
+            deadline: ig_deadline, 
+            exec: ig_exec, 
+            exec_ns: ig_exec_ns,
+        });
+        inference_gpu_accuracy_data.push({
+            name: `${name}`,
+            SubFlow: ig_acc,
+            "Non-SubFlow": ig_acc_ns,
+            deadline: ig_deadline,
+        });
+        inference_cpu_execution_data.push({
+            name: `${name}`, 
+            deadline: ic_deadline, 
+            exec: ic_exec, 
+            exec_ns: ic_exec_ns,
+        });
+        inference_cpu_accuracy_data.push({
+            name: `${name}`,
+            SubFlow: ic_acc,
+            "Non-SubFlow": ic_acc_ns,
+            deadline: ic_deadline,
+        });
+        training_execution_data.push({
+            name: `${name}`, 
+            deadline: t_deadline, 
+            exec: t_exec, 
+            exec_ns: t_exec_ns,
+        });
+        training_accuracy_data.push({
+            name: `${name}`,
+            SubFlow: t_acc,
+            "Non-SubFlow": t_acc_ns,
+            deadline: t_deadline,
+        });
+    }
+
+    return [inference_gpu_execution_data, inference_gpu_accuracy_data, inference_cpu_execution_data, 
+    inference_cpu_accuracy_data, training_execution_data, training_accuracy_data ];
+}
+
+// import { generateData2 } from "./NU_Generation";
+
+const generateData2 = () => {
+  let inference_time = [{}];
+  let training_time = [{}];
+
+  for(let i = 1; i <= 10; i++) {
+      let fraction = (i/10);
+      let ig_time = 96 - 109.881*fraction + 1747.669*Math.pow(fraction,2) - 3357.809*Math.pow(fraction,3) + 2902.098*Math.pow(fraction,4) - 769.2308 *Math.pow(fraction,5);
+      let ic_time = 541.734 * Math.pow(fraction, 0.2269899);
+      let accuracy = 0.7784677 + 0.5072611*fraction - 0.8448718*Math.pow(fraction,2) + 0.4615385 * Math.pow(fraction,3);
+      let tg_time = -11.53333 + 351.6373*fraction - 1366.958*Math.pow(fraction,2) + 2440.793*Math.pow(fraction,3) - 1763.403 * Math.pow(fraction,4) + 410.2564 * Math.pow(fraction,5);
+     
+      inference_time.push({
+          network_utilization: fraction *= addRandomness(), 
+          "GPU (L)": ig_time *= addRandomness(), 
+          "CPU (L)": ic_time *= addRandomness(), 
+          "Accuracy (R)": accuracy *= addRandomness(),
+      });
+      training_time.push({
+          network_utilization: fraction *= addRandomness(),
+          "GPU (single train-iteration)": tg_time *= addRandomness(),
+      });
+      
+  }
+
+  return [inference_time, training_time ];
+}
+
+function addRandomness() {
+  return Math.random()*(1.10-0.85) + 0.85;
+}
+
+
 const data = generateData();
 const data2 = generateData();
 const data3 = generateData();
