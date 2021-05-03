@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div className="hero" style={{
             height: '60vh',
-            textAlign: 'center'
+            textAlign: 'center',
         }}>
             <Navigation />
             <h1 className="display-3">Welcome!</h1>
