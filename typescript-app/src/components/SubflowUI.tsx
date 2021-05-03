@@ -1,3 +1,5 @@
+// import Gif from "../icons/Gif.gif";
+import "./background-styles.css";
 import "../styles.css";
 import {
   LineChart,
@@ -186,7 +188,7 @@ export default function SubflowUI() {
   };
 
   return (
-    <div>
+    <div className="background">
       <Navigation />
       <section className="section" id="title_section">
         <h1 className="has-text-centered title is-1"> SUBFLOW UI </h1>
@@ -202,8 +204,8 @@ export default function SubflowUI() {
               subnetworks. The SubFlow UI page is a comparison tool to compare
               the results between non-SubFlow networks and a SubFlow network.
               The following charts represent various measurements of accuracy
-              and network utilization. Further information can be found in Lee
-              and Nirjon's paper.
+              and network utilization. <a href="https://drive.google.com/file/d/119t3KFKW64a-nVfg8Ed3wwh_z_RXzH5v/view">
+              Further information can be found in Lee and Nirjon's paper.  </a>
             </p>
           </div>
 
@@ -273,8 +275,10 @@ export default function SubflowUI() {
                     >
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis
-                        domain={[0, "auto"]}
-                        minTickGap={10}
+                        type="number"
+                        dataKey="deadline"
+                        domain={["auto", "auto"]}
+                        tickCount={8}
                         interval={"preserveStartEnd"}
                       />
                       <YAxis dataKey="SubFlow" />
@@ -285,7 +289,7 @@ export default function SubflowUI() {
                     </LineChart>
                   </ResponsiveContainer>
                   <h4 className="subtitle is-4 has-text-centered">
-                    Deadline (ms){" "}
+                    Deadline (µs){" "}
                   </h4>
                 </div>
               </div>
@@ -307,8 +311,10 @@ export default function SubflowUI() {
                     >
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis
-                        domain={[0, "auto"]}
-                        minTickGap={10}
+                        type="number"
+                        dataKey="deadline"
+                        domain={["auto", "auto"]}
+                        tickCount={8}
                         interval={"preserveStartEnd"}
                       />
                       <YAxis dataKey="SubFlow" />
@@ -319,13 +325,13 @@ export default function SubflowUI() {
                     </LineChart>
                   </ResponsiveContainer>
                   <h4 className="subtitle is-4 has-text-centered">
-                    Deadline (ms){" "}
+                    Deadline (µs){" "}
                   </h4>
                 </div>
               </div>
             </div>
             <div className="column">
-              <h2 className="subtitle is-2">Training (GPU)</h2>{" "}
+              <h2 className="subtitle is-2 ">Training (GPU)</h2>{" "}
               <div className="box" id="box_column">
                 <div id="graph">
                   <h4 className="subtitle is-4" id="vertlabel">
@@ -341,8 +347,10 @@ export default function SubflowUI() {
                     >
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis
-                        domain={[0, "auto"]}
-                        minTickGap={10}
+                        type="number"
+                        dataKey="deadline"
+                        domain={["auto", "auto"]}
+                        tickCount={8}
                         interval={"preserveStartEnd"}
                       />
                       <YAxis dataKey="SubFlow" />
@@ -353,7 +361,7 @@ export default function SubflowUI() {
                     </LineChart>
                   </ResponsiveContainer>
                   <h4 className="subtitle is-4 has-text-centered">
-                    Deadline (ms){" "}
+                    Deadline (µs){" "}
                   </h4>
                 </div>
               </div>
@@ -361,7 +369,7 @@ export default function SubflowUI() {
           </div>
           <div className="row">
             <div className="column">
-              <h2 className="subtitle is-2">Inference</h2>
+              <h2 className="subtitle is-2 has-text-centered">Inference</h2>
               <div className="box">
                 <ResponsiveContainer width="100%" height={500}>
                   <ComposedChart
@@ -382,8 +390,8 @@ export default function SubflowUI() {
                     <Label value = {'Inference Time (µs)'} angle ={90} position = 'insideTopLeft' fontSize={26} fontFamily={"Arial"} color={"#4a4a4a"}/>
                     </YAxis>
                     
-                    <YAxis yAxisId="right" type="number" domain={[0.80, 0.90]} ticks={[0.8,0.82,0.84,0.86,0.88,0.9]} orientation="right">
-                    <Label value = {'Accuracy'} angle ={90} position = 'insideRight' fontSize={26} fontFamily={"Arial"} color={"#4a4a4a"}/>
+                    <YAxis yAxisId="right" type="number" domain={["auto", "auto"]} tickCount={10} orientation="right">
+                    <Label value = {'Accuracy (%)'} angle ={90} position = 'insideRight' fontSize={26} fontFamily={"Arial"} color={"#4a4a4a"}/>
                       </YAxis>
                     <Tooltip />
                     <CartesianGrid stroke="#f5f5f5" />
@@ -395,12 +403,12 @@ export default function SubflowUI() {
                   </ComposedChart>
                 </ResponsiveContainer>
                 <h4 className="subtitle is-4 has-text-centered">
-                    Network Utilization (N) {" "}
+                    Network Utilization (%) {" "}
                   </h4>
               </div>
             </div>
             <div className="column">
-              <h2 className="subtitle is-2">Training</h2>
+              <h2 className="subtitle is-2 has-text-centered">Training</h2>
               <div className="box">
               <ResponsiveContainer width="100%" height={500}>
                   <BarChart
@@ -429,7 +437,7 @@ export default function SubflowUI() {
                   </BarChart>
                 </ResponsiveContainer>
                 <h4 className="subtitle is-4 has-text-centered">
-                    Network Utilization (N){" "}
+                    Network Utilization (%){" "}
                   </h4>
               </div>
             </div>

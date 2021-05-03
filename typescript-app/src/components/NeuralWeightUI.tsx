@@ -1,13 +1,19 @@
 import "../styles.css";
 import PageSet from "./PageSet";
+import PageMatching from "./PageMatching";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Label } from "recharts";
 
 import Navigation from "./Navigation";
 import fisherdata from "./fisherdata.json";
 
+import "./background-styles.css";
+
 export default function NeuralWeightUI() {
+
+
+
   return (
-    <div>
+    <div className="background">
       <Navigation />
       <section className="section" id="title_section">
         <h1 className="has-text-centered title is-1">
@@ -25,66 +31,9 @@ export default function NeuralWeightUI() {
               the same weights share a page in main memory. The Neural Weight
               Virtulization UI page is a tool to allow users to witness first
               hand how page sharing works, as well as graphs that visualize data
-              gathered from the Neural Weight Virtulization method. Further
-              information can be found in Lee and Nirjon's paper.
+              gathered from the Neural Weight Virtulization method. <a href="https://drive.google.com/file/d/1Ceu84h8JvR6ruGjw3jji0Zf5GwbHVMNz/view">
+              Further information can be found in Lee and Nirjon's paper.  </a>
             </p>
-          </div>
-          <div className="columns">
-            <div className="column">
-              <h1 className="title is-3 has-text-centered"> PAGE SELECTION </h1>
-              <div className="box">
-                <div className="columns">
-                  <div className="column">
-                    <h3
-                      className="title is-4 has-text-centered"
-                      id="text_center"
-                    >
-                      MAIN MEMORY
-                    </h3>
-                    <label htmlFor="main-pages">PAGES:</label>{" "}
-                    <input
-                      type="number"
-                      id="main-pages"
-                      name="main-pages"
-                      min="0"
-                      max="20"
-                    />
-                  </div>
-                  <div className="column">
-                    <h3
-                      className="title is-4 has-text-centered"
-                      id="text_center"
-                    >
-                      DNN 1
-                    </h3>
-                    <label htmlFor="main-pages">PAGES:</label>{" "}
-                    <input
-                      type="number"
-                      id="main-pages"
-                      name="main-pages"
-                      min="0"
-                      max="20"
-                    />
-                  </div>
-                  <div className="column">
-                    <h3
-                      className="title is-4 has-text-centered"
-                      id="text_center"
-                    >
-                      DNN 2
-                    </h3>
-                    <label htmlFor="main-pages">PAGES:</label>{" "}
-                    <input
-                      type="number"
-                      id="main-pages"
-                      name="main-pages"
-                      min="0"
-                      max="20"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <div className="columns">
             <div className="column">
@@ -141,24 +90,21 @@ export default function NeuralWeightUI() {
                     </div>
                   </div>
                   <div className="column is-three-fifths">
-                  <h3
-                      className="subtitle is-2 has-text-centered"
-                    > NEURAL WEIGHT VIRTULIZATION
-                        </h3>
                 <div id="page_set_location">
-                  <PageSet
-                  viewHeight={480}
-                  viewWidth={1080}
-                  pct_size={5}
-                  x__={0}
-                  y__={0}
-                  paths={5}
-                  pagesm={16}
-                  pages1={10}
-                  pages2={8}
-                />
+                    <PageSet pct_size={5}
+                    x__={0}
+                    y__={0}
+                    pagesm={8}
+                    pages1={6}
+                    pages2={7}
+                    viewWidth={1080}
+                    viewHeight={480}
+                    />
                 </div>
                   </div>
+                  <script>
+
+                  </script>
                 </div>
                 <div className="columns">
                     <div className="column">
@@ -191,7 +137,7 @@ export default function NeuralWeightUI() {
                   />
                 </LineChart>
                 <h4 className="subtitle is-4 has-text-centered">
-                    Page Names {" "}
+                    Weight Parameters {" "}
                   </h4>
                     </div>
                     <div className="column">
