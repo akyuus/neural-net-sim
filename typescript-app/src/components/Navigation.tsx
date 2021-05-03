@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom' ;
+import { Link } from 'react-router-dom';
 import { Nav, Navbar } from "react-bootstrap";
 import Logo from "../icons/neural-net-logo.svg";
 declare module "*.svg";
