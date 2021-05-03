@@ -67,7 +67,7 @@ export default function SubflowUI() {
     <div className="background">
       <Navigation />
       <section className="section" id="title_section">
-        <h1 className="has-text-centered title is-1"> SUBFLOW UI </h1>
+        <h1 className="has-text-centered title is-1"> SUBFLOW </h1>
       </section>
       <section className="section">
         <div className="container">
