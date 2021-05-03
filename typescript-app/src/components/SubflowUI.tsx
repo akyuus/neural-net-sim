@@ -1,6 +1,7 @@
 
 import {generateData2} from "./NU_Generation";
 // import Gif from "../icons/Gif.gif";
+import "./background-styles.css";
 import "../styles.css";
 import {
   LineChart,
@@ -63,7 +64,7 @@ export default function SubflowUI() {
   };
 
   return (
-    <div>
+    <div className="background">
       <Navigation />
       <section className="section" id="title_section">
         <h1 className="has-text-centered title is-1"> SUBFLOW UI </h1>

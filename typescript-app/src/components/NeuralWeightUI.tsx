@@ -6,12 +6,14 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Label } from "re
 import Navigation from "./Navigation";
 import fisherdata from "./fisherdata.json";
 
+import "./background-styles.css";
+
 export default function NeuralWeightUI() {
 
 
 
   return (
-    <div>
+    <div className="background">
       <Navigation />
       <section className="section" id="title_section">
         <h1 className="has-text-centered title is-1">
