@@ -209,10 +209,10 @@ export default function SubflowUI() {
             <div className="column">
               <h2 className="subtitle is-2 ">Training (GPU)</h2>{" "}
               <div className="box" id="box_column">
-                <div id="graph">
+                <div id="training_graph">
                   <h4 className="subtitle is-4" id="vertlabel">
                     {" "}
-                    Accuracy (%){" "}
+                    Training Ratio (%){" "}
                   </h4>
                   <ResponsiveContainer width="100%" height={400}>
                     <LineChart

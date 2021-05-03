@@ -40,6 +40,7 @@
 #vertlabel { writing-mode: tb-rl;  position: relative; top: 300px;}
 #box_column {height: 500px;}
 #graph {position: relative; bottom:150px;}
+#training_graph {position: relative; bottom:200px;}
 #title_section {padding-bottom:0%}
 #text_center {position: relative; right:50px}
 #page_set_location {position: relative; right: 30px}
