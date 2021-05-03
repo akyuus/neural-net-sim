@@ -11,6 +11,6 @@ describe("<SubFlowUI />", () => {
     ReactDOM.render(<Router><SubFlowUI /></Router>, root);
 
     // Content
-    expect(root.querySelector("h1")?.textContent).toBe(" SUBFLOW UI ");
+    expect(root.querySelector("h1")?.textContent).toBe(" SUBFLOW ");
   });
 });
