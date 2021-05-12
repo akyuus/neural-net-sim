@@ -1,3 +1,6 @@
+/*
+    GET RID OF THIS FILE WHEN TENSORFLOW IS IMPLEMENTED
+*/
 
 export function generateData2() {
     let inference_time = [];

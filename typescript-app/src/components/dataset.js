@@ -1,4 +1,6 @@
-
+/*
+    GET RID OF THIS FILE WHEN TENSORFLOW IS IMPLEMENTED
+*/
 
 const ig_max = 12;
 const ic_max = 34;
