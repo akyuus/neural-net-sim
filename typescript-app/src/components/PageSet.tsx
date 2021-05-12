@@ -2,6 +2,10 @@
 import {useState, useEffect} from 'react';
 // import PageMatching from './PageMatching';
 
+/*
+  IMPORT TENSORFLOW DATA HERE
+*/
+
 export interface Set {
   pct_size: number,
   x__: number,
@@ -208,6 +212,7 @@ function handle2Change(e) {
                 DNN 1
               </h3>
               <label htmlFor="main-pages">PAGES:</label>{" "}
+              {/* WHEN TENSORFLOW IS IMPLEMENTED, USE INPUTS TO MAKE GRAPHS REACTIVE */}
               <input
                 type="number"
                 id="main-pages-1"
@@ -225,6 +230,7 @@ function handle2Change(e) {
                 MAIN MEMORY
               </h3>
               <label htmlFor="main-pages">PAGES:</label>{" "}
+              {/* WHEN TENSORFLOW IS IMPLEMENTED, USE INPUTS TO MAKE GRAPHS REACTIVE */}
               <input
                 type="number"
                 id="main-pages-mem"
@@ -242,6 +248,7 @@ function handle2Change(e) {
                 DNN 2
               </h3>
               <label htmlFor="main-pages">PAGES:</label>{" "}
+              {/* WHEN TENSORFLOW IS IMPLEMENTED, USE INPUTS TO MAKE GRAPHS REACTIVE */}
               <input
                 type="number"
                 id="main-pages-2"

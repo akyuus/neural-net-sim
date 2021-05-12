@@ -20,6 +20,10 @@ import Navigation from "./Navigation";
 
 // import { generateData } from "./dataset";
 
+/*
+  IMPORT TENSORFLOW DATA HERE
+*/
+
 const ig_max = 12;
 const ic_max = 34;
 const t_max = 18;

@@ -6,6 +6,10 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Label } from "re
 import Navigation from "./Navigation";
 import fisherdata from "./fisherdata.json";
 
+/*
+  IMPORT TENSORFLOW DATA HERE
+*/
+
 import "./background-styles.css";
 
 export default function NeuralWeightUI() {
@@ -91,6 +95,7 @@ export default function NeuralWeightUI() {
                   </div>
                   <div className="column is-three-fifths">
                 <div id="page_set_location">
+                  {/* UTILIZE IMPORTED TENSORFLOW DATA HERE */}
                     <PageSet pct_size={5}
                     x__={0}
                     y__={0}
@@ -109,6 +114,7 @@ export default function NeuralWeightUI() {
                 <div className="columns">
                     <div className="column">
                     <h2 className="subtitle is-2 has-text-centered">FISHER DATA</h2>
+                    {/* UTILIZE IMPORTED TENSORFLOW DATA HERE */}
                     <LineChart
                   width={600}
                   height={400}
@@ -142,6 +148,7 @@ export default function NeuralWeightUI() {
                     </div>
                     <div className="column">
                     <h2 className="subtitle is-2 has-text-centered">DENSITY CHART</h2>
+                    {/* UTILIZE IMPORTED TENSORFLOW DATA HERE */}
                     <LineChart
                   width={600}
                   height={400}
